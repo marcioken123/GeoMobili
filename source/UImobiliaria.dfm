@@ -1,0 +1,2319 @@
+object FrmImobiliaria: TFrmImobiliaria
+  Left = 166
+  Top = 127
+  Width = 811
+  Height = 602
+  Caption = 'FrmImobiliaria'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poScreenCenter
+  Visible = True
+  PixelsPerInch = 96
+  TextHeight = 13
+  object BvlGrupo: TBevel
+    Left = 407
+    Top = 41
+    Width = 371
+    Height = 24
+  end
+  object Label12: TLabel
+    Left = 470
+    Top = 45
+    Width = 52
+    Height = 14
+    Cursor = crHandPoint
+    Caption = 'Produ'#231#227'o'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Style = [fsBold, fsUnderline]
+    ParentFont = False
+    Transparent = True
+    OnClick = Label12Click
+  end
+  object Label13: TLabel
+    Left = 426
+    Top = 45
+    Width = 31
+    Height = 14
+    Cursor = crHandPoint
+    Caption = 'Filiais'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Style = [fsBold, fsUnderline]
+    ParentFont = False
+    Transparent = True
+    OnClick = Label13Click
+  end
+  object SpeedButton7: TSpeedButton
+    Left = 0
+    Top = 96
+    Width = 138
+    Height = 22
+    Caption = 'Geral'
+    OnClick = SpeedButton7Click
+  end
+  object SpeedButton8: TSpeedButton
+    Left = 0
+    Top = 117
+    Width = 138
+    Height = 22
+    Caption = 'Administrador'
+    OnClick = SpeedButton7Click
+  end
+  object SpeedButton9: TSpeedButton
+    Left = 0
+    Top = 138
+    Width = 138
+    Height = 22
+    Caption = 'Produ'#231#227'o'
+    OnClick = SpeedButton7Click
+  end
+  object PnlDetalhe: TPanel
+    Left = 150
+    Top = 98
+    Width = 635
+    Height = 389
+    Color = clWhite
+    TabOrder = 2
+    DesignSize = (
+      635
+      389)
+    object Label1: TLabel
+      Left = 4
+      Top = 82
+      Width = 69
+      Height = 14
+      Caption = 'Raz'#227'o Social :'
+      Color = 15792119
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object Label6: TLabel
+      Left = 4
+      Top = 55
+      Width = 77
+      Height = 14
+      Caption = 'Nome Fantasia :'
+      Color = 15792119
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object BtnEditar: TSpeedButton
+      Left = 15
+      Top = 8
+      Width = 75
+      Height = 19
+      Caption = '&Editar'
+    end
+    object DBText1: TDBText
+      Left = 83
+      Top = 54
+      Width = 280
+      Height = 12
+      DataField = 'NomeFantasia'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object DBText2: TDBText
+      Left = 83
+      Top = 81
+      Width = 280
+      Height = 14
+      DataField = 'RazaoSocial'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label48: TLabel
+      Left = 4
+      Top = 136
+      Width = 34
+      Height = 14
+      Caption = 'E-mail :'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object LblSite: TLabel
+      Left = 4
+      Top = 162
+      Width = 21
+      Height = 14
+      Caption = 'Site:'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object DBText10: TDBText
+      Left = 58
+      Top = 161
+      Width = 549
+      Height = 15
+      Anchors = [akLeft, akTop, akRight]
+      DataField = 'Site'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 4
+      Top = 106
+      Width = 47
+      Height = 14
+      Caption = 'Telefone :'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object SpeedButton4: TSpeedButton
+      Left = 562
+      Top = 108
+      Width = 64
+      Height = 18
+      Anchors = [akTop, akRight]
+      Caption = 'Discar'
+    end
+    object SpeedButton5: TSpeedButton
+      Left = 562
+      Top = 134
+      Width = 64
+      Height = 18
+      Anchors = [akTop, akRight]
+      Caption = 'Enviar'
+    end
+    object Label7: TLabel
+      Left = 10
+      Top = 410
+      Width = 54
+      Height = 14
+      Caption = 'Funda'#231#227'o :'
+      Color = 15792119
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object Label4: TLabel
+      Left = 10
+      Top = 432
+      Width = 31
+      Height = 14
+      Caption = 'CNPJ :'
+      Color = 15792119
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object Label5: TLabel
+      Left = 208
+      Top = 432
+      Width = 50
+      Height = 14
+      Caption = 'Inscri'#231#227'o :'
+      Color = 15792119
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object Label9: TLabel
+      Left = 208
+      Top = 410
+      Width = 35
+      Height = 14
+      Caption = 'CRECI :'
+      Color = 15792119
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object DBText3: TDBText
+      Left = 70
+      Top = 410
+      Width = 103
+      Height = 15
+      DataField = 'DataFund'
+    end
+    object DBText4: TDBText
+      Left = 70
+      Top = 433
+      Width = 103
+      Height = 13
+      DataField = 'CNPJ'
+    end
+    object DBText13: TDBText
+      Left = 263
+      Top = 411
+      Width = 104
+      Height = 13
+      DataField = 'Creci'
+    end
+    object DBText14: TDBText
+      Left = 263
+      Top = 432
+      Width = 105
+      Height = 15
+      DataField = 'Inscricao'
+    end
+    object Label32: TLabel
+      Left = 103
+      Top = 455
+      Width = 264
+      Height = 13
+      Caption = #218'ltima atualiza'#231#227'o de dados da Imobili'#225'ria - 01/03/2001'
+    end
+    object Label3: TLabel
+      Left = 5
+      Top = 182
+      Width = 52
+      Height = 13
+      Caption = 'Endere'#231'o :'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Shape1: TShape
+      Left = 5
+      Top = 197
+      Width = 370
+      Height = 1
+      Pen.Color = clBlue
+    end
+    object Label8: TLabel
+      Left = 5
+      Top = 206
+      Width = 52
+      Height = 14
+      Caption = 'Descri'#231#227'o:'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label34: TLabel
+      Left = 298
+      Top = 388
+      Width = 72
+      Height = 13
+      Caption = 'Ver no mapa'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+    end
+    object Image2: TImage
+      Left = 287
+      Top = 5
+      Width = 92
+      Height = 68
+      Center = True
+      Picture.Data = {
+        0A544A504547496D6167653F090000FFD8FFE000104A46494600010101025802
+        580000FFDB004300040303030303040303040504030405070504040507080606
+        070606080A0808080808080A080A0A0B0A0A080D0D0E0E0D0D12121212121414
+        1414141414141414FFDB0043010505050807080F0A0A0F120F0C0F1216151515
+        1516161414141414141414141414141414141414141414141414141414141414
+        14141414141414141414141414FFC0001108001E007303011100021101031101
+        FFC4001D000001040301010000000000000000000007030408090205060001FF
+        C4003E10000103020403050408020B0000000000010203040506000711120813
+        2114223141511523617116172432334252916263091853558292A3B1B2B3D2FF
+        C4001C0101000202030100000000000000000000000405010602030708FFC400
+        3411000103020305050509000000000000000001020304110512211314314151
+        15225261A106163392B12332427181C1E2F0F1FFDA000C03010002110311003F
+        009FD8011912E2C447325BEDB0DEBA6F754109D7E674C01E62546948E6C579B7
+        9AF0DEDA82D3FB8D70062B9D09B5143925942C78A54B483FB13801254D8CE050
+        8AF32FBFB494349713A92078600D4D977545BBE888AB32CAE24843CF449D05D3
+        ABB1A54759438D2F4E9A8235F8820E38472674B926AE91D4CFC8BAE88A8BD514
+        0CC3CC9BE5CE23DDB4571D7F47C21507D980F7131928E70A86BFAB5F1F81DB8A
+        FDE24DEF27E1B7F54DA5709A3EC3DE517ED6FEBC32FEE19EF2BAA2D9B417EB72
+        9A5C95A56DB312135F8B264BEA086586F5FCCB51C584922312E6AD474AEA9951
+        89A755E889CCD9FB4E2466993527D88521D405165E7509215A7548248D743D35
+        18E6475E23C438DB880E36A0B6D4354A93D411F0230303335BA285149A8C30A1
+        D08E737AFF00BE005A3D4204C244494C3E53F7834E257A7F949C00E351801AB7
+        54A63CF7666A6477246A47252EA14BD478F741D7003BC01F0F8600ADAE2FB312
+        BF9D39833B2DAC3716F5AD97D065D52B6F34A3CB725446F590B514F8867A349F
+        E3270013BFA396E754BCBDBBEDD94F15AA93586E7369512486A6B01274D7CB74
+        738022DBAE513393896B8D3795DC6D4B4EA356A93AFD65C7D2D21B6636F4B084
+        170F2F55EC4818030CDFB22D0B16E3B7A9791D98953BE6BB3B729D4D3965C758
+        7754F2034EC53D56A3AF74751A6B80270653DCD53B06EFA0D997CD412FDD574D
+        121AEE8034D18B812DFBB2B50E9CC799010E69E2B00F9E202CCD8E7C9E2FA9B3
+        370E9EAB0ADBDBE0AE8BD59CFE55241376AD159B99FBC531C7B7A4434C05CA3F
+        D8215BB681EA4F89F8626644BE6E66BFBC49B2D95FB97BDBCF8026A95FB6B57F
+        3A5AA2D62A2DB147B2A148A8321D3A32F555B47BD5A95E1F65637293F1D4F962
+        1ED9AFA8C9E14F53606E1F353614B5089F156CBE4CFE4BE8579E7E5ED7767A5C
+        17366EC54BEDE5ED0A747A0D20A894250D3BCC53200FD6E6C2E39E9B80F4C4F3
+        5927970FD984DA3845A5DDD21ED5DB7A81398796A3D77D30BADA35FF000A1380
+        2BFF00226C0B03346A95F7734AFF004597162A1A7623EEBECB6A932242D45600
+        7CF5080353A7AE00D65EA6265566898791B7CD46BD1E198FD8EB7094A42DC96B
+        FBCCA795DD7C6ED074042BC3AE00B15CFECF1AC64FE42D3EAD562DC6CD3B8A98
+        C428B153D395527584996FEDF211F551F4DDB460080F9448B9B29B88CB00DDCA
+        7A2D424CFA7BF31B756A2A0C56D000E6EBF9B6C8D55AF9E00B84D0FAE0006715
+        59D68C98CB097360BC9FA595A0AA7D05AD7BC97569EFC8D3D194F7BE7A0C0108
+        B2EF2CB8A4B2ED7AD48B6E87019A75ED050BAC49A908CECC7623C8528214A789
+        5B7BB9A54478EBE3801AF0777E8CBFAC666C494AE5172CE9B2D235E9DA694770
+        1F3DAE2F0071FC39DBB9277557ABEEE7B575BA4D2DA8885D377BCEB0A7A5BCEF
+        7C82D6A4ED48EA3E380195FF003ACFB1F38634BE1BEAF34C4A6F24C0A9B4B755
+        BA6EA77F28BBDE5B646815BBA1EBE58C2AD92EA764513A57A31BC556C17E755A
+        AB3E73F5E9F214BAE3EE76D7E503DEED5F7F727D36A8777D31A6C922B9EAEF33
+        E82A6A56474ED8ADDDCA88A9F52C22AD5D99072E4D7F7EEA87B21B7CB9FCD719
+        0777EE75C6DF7EE5FC8F017B112756F2CF6FD2E554E69DCD36472EDD82E2DFAC
+        D5DCDF2960FBC3CC3D753FCC27AFC35C5261D15D5667723D2FDAEAEC91B28204
+        BB9E897FCB920F554ECF0FA83A8DB6D43A4FD5552A5AA654F9498FDB53290B0E
+        731C5FE2957869FC3D3C317514CD9356EA79C5761F3D1BF2CA96553B0CB7CC8F
+        65F0519956D733ED4D575986C235EBC8ACA5BD7FE8771DA4316C81E14ADFCD4C
+        97ACE61D6A4CD66AE9972A3D15A61C4A19298CD27452C1428ABDF288F1F2C00C
+        F811168C5CEA9D06F2A74476A7169526551E64C015D8A653D414F2D3BBBA9572
+        779DDE5B7CB002F98355CCEE2A3392A37965B529155B62C890CB1436A66CEC5C
+        B6DCDC85AD0E9095AA4AD05C527F4E80F41800719FCFE71C2CC5A5DD99BAD446
+        2EF71965D8AB861A424B705CEE12967BA083802DFEDFAAB35EA0D2EB8C1D58A9
+        C26263641E9B64369707FCB0070578E45D899877640BB2F5A7A2B2F52D1B29F1
+        A4A9CE4B402B7F46C2827AA802751D70010AA301BA8417A0B9DD43C8D848F2C0
+        0108BC236504444F535448E26D410EB722502E85A9A91F8A83A2F4D17AF5E980
+        359FD4AF253FB862FF00ABFF00BC601CFBDC1ED8D4DAB2E4D0D8894F4A46D6C3
+        61CDDF3249563AA681B2E8E2C283129A89D9A2B66EAA973734DE1768464B0AA8
+        C9E7C1DFF68652A750A5A3CC056BD3117B360E85CFBE38A78D3E540935FB6B30
+        EA96F3F6DC755BB1A925A4C764FDB0BC98EDF7520EBA82AD806252A3F8696299
+        B2532AE6EFE6E3CB8FFA035AE0D2DD855A556DE94D3D5127543CA2EEE4F4DBEB
+        E98E2B4AD56E4E476B31AA849F78D36BD6C136DAE1EED58F6D56285377BADD6D
+        BECB534075D2C3EC0EA02DA274DC3C943AE310534717DC3388E37555E89B7545
+        B70D2C333C21E4FA284E502351186214A79A7E7A505D1CF547DFCA2AF79F9398
+        AD3E789254854B4F2FED8B1ED166C9B5A0A29B41652E06E3B654A014F28ADC56
+        AB2A3AA9449F1C002D4708F948DCAA854134760552A1CFE6CD4979B7476A0A4B
+        DA14383EFA5641F81C6004BCB9CB3B3F2AE81F472CDA6B34D80E3A64C90D6BAB
+        AFA8049716A5151274481E38C839ACC7C80CBFCD3ADC4AD5E14E6AA2EC3416D9
+        4BBBB408510543BAA4F8E98008D45A453ADFA441A1D1D8116954E8EDC585191A
+        94B6CB29DA840D493A003007FFD9}
+      PopupMenu = PpmIcone
+      Proportional = True
+      Transparent = True
+    end
+    object ListBox6: TListBox
+      Left = 71
+      Top = 206
+      Width = 299
+      Height = 182
+      Ctl3D = False
+      ItemHeight = 13
+      Items.Strings = (
+        '        Central'
+        '        Av. Republica do Libano, 417'
+        '        Ibirapuera  - S'#227'o Paulo - S.P.'
+        '        Cep - 07056-011          ZONA SUL'
+        ''
+        ''
+        '        Filial'
+        '        R. Gaivota, 916  Apto. 42'
+        '        Moema  - S'#227'o Paulo - S.P.'
+        '        Cep - 05045-022          ZONA SUL')
+      ParentCtl3D = False
+      PopupMenu = ppmendereco
+      TabOrder = 10
+    end
+    object EdtNomeFantasi: TDBEdit
+      Left = 83
+      Top = 53
+      Width = 144
+      Height = 19
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'NomeFantasia'
+      ParentCtl3D = False
+      TabOrder = 0
+    end
+    object EdtRazaoSocial: TDBEdit
+      Left = 83
+      Top = 77
+      Width = 280
+      Height = 19
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'RazaoSocial'
+      ParentCtl3D = False
+      TabOrder = 1
+    end
+    object DBESite: TDBEdit
+      Left = 58
+      Top = 159
+      Width = 567
+      Height = 20
+      Anchors = [akLeft, akTop, akRight]
+      CharCase = ecLowerCase
+      Ctl3D = False
+      DataField = 'Site'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 2
+    end
+    object DbcDescricao: TDBComboBox
+      Left = 58
+      Top = 107
+      Width = 235
+      Height = 21
+      Cursor = crHandPoint
+      Style = csDropDownList
+      BevelKind = bkSoft
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'Descricao'
+      ItemHeight = 13
+      Items.Strings = (
+        'CELULAR'
+        'COMERCIAL'
+        'FAX'
+        'RECADO'
+        'RESIDENCIAL')
+      ParentCtl3D = False
+      PopupMenu = ppmTelefone
+      TabOrder = 3
+    end
+    object DBComboBox1: TDBComboBox
+      Left = 58
+      Top = 133
+      Width = 235
+      Height = 21
+      Cursor = crHandPoint
+      Style = csDropDownList
+      BevelKind = bkSoft
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'Descricao'
+      ItemHeight = 13
+      Items.Strings = (
+        'CELULAR'
+        'COMERCIAL'
+        'FAX'
+        'RECADO'
+        'RESIDENCIAL')
+      ParentCtl3D = False
+      TabOrder = 4
+    end
+    object EdtFundacao: TDBEdit
+      Left = 70
+      Top = 408
+      Width = 103
+      Height = 19
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'DataFund'
+      ParentCtl3D = False
+      TabOrder = 5
+    end
+    object EdtCreci: TDBEdit
+      Left = 262
+      Top = 408
+      Width = 109
+      Height = 19
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'Creci'
+      ParentCtl3D = False
+      TabOrder = 6
+    end
+    object EdtCNPJ: TDBEdit
+      Left = 70
+      Top = 430
+      Width = 103
+      Height = 19
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'CNPJ'
+      ParentCtl3D = False
+      TabOrder = 7
+    end
+    object EdtInscricao: TDBEdit
+      Left = 262
+      Top = 430
+      Width = 109
+      Height = 19
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'Inscricao'
+      ParentCtl3D = False
+      TabOrder = 8
+    end
+    object CheckBox1: TCheckBox
+      Left = 85
+      Top = 261
+      Width = 219
+      Height = 17
+      Caption = 'Este '#233' o endere'#231'o para Correposnd'#234'ncia.'
+      Ctl3D = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 9
+      WordWrap = True
+    end
+    object CheckBox6: TCheckBox
+      Left = 85
+      Top = 341
+      Width = 219
+      Height = 17
+      Caption = 'Este '#233' o endere'#231'o para Correposnd'#234'ncia.'
+      Ctl3D = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 11
+      WordWrap = True
+    end
+  end
+  object pnlProducao: TPanel
+    Left = 150
+    Top = 98
+    Width = 635
+    Height = 389
+    BevelInner = bvRaised
+    BevelOuter = bvNone
+    Color = clWhite
+    TabOrder = 3
+    Visible = False
+    DesignSize = (
+      635
+      389)
+    object Label33: TLabel
+      Left = 268
+      Top = 10
+      Width = 9
+      Height = 14
+      Caption = #224':'
+      Color = 15003631
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object Label11: TLabel
+      Left = 3
+      Top = 31
+      Width = 101
+      Height = 14
+      Caption = 'Grupo de Unidades :'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsItalic, fsUnderline]
+      ParentFont = False
+    end
+    object Label79: TLabel
+      Left = 3
+      Top = 9
+      Width = 168
+      Height = 14
+      Caption = 'Produ'#231#227'o dos funcion'#225'rios de:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+    end
+    object PageControl2: TPageControl
+      Left = 3
+      Top = 63
+      Width = 627
+      Height = 321
+      ActivePage = TabSheet6
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Style = tsFlatButtons
+      TabOrder = 0
+      object TabSheet4: TTabSheet
+        Caption = 'Im'#243'veis'
+        DesignSize = (
+          619
+          290)
+        object Label15: TLabel
+          Left = 4
+          Top = 5
+          Width = 261
+          Height = 14
+          Caption = 'Rela'#231#227'o de Cataloga'#231#227'o e Capta'#231#227'o de Im'#243'veis :'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold, fsUnderline]
+          ParentFont = False
+        end
+        object SpeedButton1: TSpeedButton
+          Left = 571
+          Top = 252
+          Width = 48
+          Height = 38
+          Anchors = [akRight, akBottom]
+          Flat = True
+          Glyph.Data = {
+            360C0000424D360C000000000000360000002800000020000000200000000100
+            180000000000000C000000000000000000000000000000000000C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0666666666666666666C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C06666665555555F5F5F424242666666C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0666666777777666699999999777777424242666666C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C09999996699CC3366CC666699999999777777424242666666C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C099CCFF66CCFF3399FF3366CC6666999999997777774242426666
+            66C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366CC6666999999999966664242
+            42666666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366CC6666999999999966
+            66424242666666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366CC6666999999
+            99777777424242C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366CC6666
+            999999995F5F5FC0C0C0C0C0C0868686777777777777666666666666777777C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366
+            CC6666995F5F5F6666666666665F5F5F9966669966668686868080805F5F5F42
+            42425F5F5FC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF99CC
+            CC868686868686868686CC9999F0CAA6FFECCCFFFFCCFFFFCCFFECCCF0CAA686
+            86865555554D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0868686868686F0CAA6FFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCF1
+            F1F1CC99995555554D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0CC9999F0CAA6FFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFF
+            FFFFF8F8F89696964D4D4D666666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0CC9999FFECCCFFFFCCFFECCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFECCC5F5F5F4D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0CC99
+            99F0CAA6FFFFCCFFECCCFFECCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFCCCC99994D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0B2B2
+            B2FFECCCFFECCCFFCC99FFECCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFCCFFFFCCCCCC994D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0CC99
+            99FFECCCFFECCCFFCC99FFECCCFFECCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFF
+            FFCCFFFFCCFFFFCCF0CAA6555555C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0F0CA
+            A6FFECCCFFECCCFFCC99FFECCCFFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCFF
+            FFCCFFFFCCFFFFCCCCCC994D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0B2B2
+            B2FFECCCFFFFCCFFECCCFFCC99FFCC99FFECCCFFFFCCFFFFCCFFFFCCFFFFCCFF
+            FFCCFFFFCCFFFFCCCC9999555555C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0CC99
+            99F0CAA6FFFFCCFFECCCFFECCCFFECCCFFCC99FFECCCFFECCCFFECCCFFECCCFF
+            ECCCFFFFCCFFECCC996666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0CC9999FFECCCFFFFFFFFFFFFFFECCCFFCC99FFECCCFFCC99FFCC99FFECCCFF
+            ECCCFFECCCCC9999996666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0CC9999F0CAA6FFFFFFFFFFFFFFFFCCFFECCCFFCC99FFCC99FFECCCFFFFCCFF
+            ECCCF0CAA6996666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0CC9999CC9999FFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCFFECCCF0
+            CAA6868686C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0CC9999CC9999CC9999CCCC99F0CAA6F0CAA6F0CAA6CC999986
+            8686C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0}
+        end
+        object ListBox2: TListBox
+          Left = 3
+          Top = 44
+          Width = 613
+          Height = 199
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          BevelInner = bvNone
+          BevelOuter = bvNone
+          Ctl3D = False
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ItemHeight = 13
+          Items.Strings = (
+            
+              'Cataloga'#231#227'o                                      - 80 ( Unidades' +
+              ' )  em  04 ( Grupos )'
+            ''
+            
+              'Disponibilizar a Venda                       - 80 ( Unidades )  ' +
+              'em  04 ( Grupos )'
+            
+              'Disponibilizar para Loca'#231#227'o              - 80 ( Unidades )  em  ' +
+              '04 ( Grupos )'
+            ''
+            
+              'Atualizar disponilidade de Vendas     - 80 ( Unidades )  em  04 ' +
+              '( Grupos )   '
+            
+              'Atualizar disponilidade de Loca'#231#227'o   - 80 ( Unidades )  em  04 (' +
+              ' Grupos )'
+            ''
+            
+              'Atualizar valores de Vendas              - 80 ( Unidades )  em  ' +
+              '04 ( Grupos )   '
+            
+              'Atualizar valores de  Loca'#231#227'o           - 80 ( Unidades )  em  0' +
+              '4 ( Grupos )'
+            ''
+            
+              'Cancelar Venda                                 - 80 ( Unidades )' +
+              '  em  04 ( Grupos )'
+            
+              'Cancelar Loca'#231#227'o                             - 80 ( Unidades )  ' +
+              'em  04 ( Grupos )')
+          ParentCtl3D = False
+          ParentFont = False
+          TabOrder = 0
+        end
+        object CheckBox10: TCheckBox
+          Left = 3
+          Top = 26
+          Width = 89
+          Height = 17
+          Caption = 'Lan'#231'amentos.'
+          TabOrder = 1
+        end
+        object CheckBox11: TCheckBox
+          Left = 99
+          Top = 26
+          Width = 100
+          Height = 17
+          Caption = 'Im'#243'veis porntos.'
+          TabOrder = 2
+        end
+      end
+      object TabSheet1: TTabSheet
+        Caption = 'Meios de Comunica'#231#227'o'
+        ImageIndex = 3
+        DesignSize = (
+          619
+          290)
+        object Label16: TLabel
+          Left = 4
+          Top = 5
+          Width = 196
+          Height = 14
+          Caption = 'Rela'#231#227'o de Meios de Comunica'#231#227'o :'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold, fsUnderline]
+          ParentFont = False
+        end
+        object ListBox1: TListBox
+          Left = 3
+          Top = 44
+          Width = 613
+          Height = 199
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          BevelInner = bvNone
+          BevelOuter = bvNone
+          Ctl3D = False
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ItemHeight = 13
+          Items.Strings = (
+            'Nome do meio de comunia'#231#227'o cadastrado'
+            'no Gerenciador de Meios de Comunica'#231#227'o.....Total')
+          ParentCtl3D = False
+          ParentFont = False
+          TabOrder = 0
+        end
+        object CheckBox4: TCheckBox
+          Left = 3
+          Top = 26
+          Width = 89
+          Height = 17
+          Caption = 'Lan'#231'amentos.'
+          TabOrder = 1
+        end
+        object CheckBox5: TCheckBox
+          Left = 99
+          Top = 26
+          Width = 100
+          Height = 17
+          Caption = 'Im'#243'veis porntos.'
+          TabOrder = 2
+        end
+      end
+      object TabSheet5: TTabSheet
+        Caption = 'Atendimentos'
+        ImageIndex = 1
+        DesignSize = (
+          619
+          290)
+        object Label20: TLabel
+          Left = 4
+          Top = 5
+          Width = 147
+          Height = 14
+          Caption = 'Rela'#231#227'o de Atendimentos :'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold, fsUnderline]
+          ParentFont = False
+        end
+        object SpeedButton6: TSpeedButton
+          Left = 571
+          Top = 252
+          Width = 48
+          Height = 38
+          Anchors = [akRight, akBottom]
+          Flat = True
+          Glyph.Data = {
+            360C0000424D360C000000000000360000002800000020000000200000000100
+            180000000000000C000000000000000000000000000000000000C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0666666666666666666C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C06666665555555F5F5F424242666666C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0666666777777666699999999777777424242666666C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C09999996699CC3366CC666699999999777777424242666666C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C099CCFF66CCFF3399FF3366CC6666999999997777774242426666
+            66C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366CC6666999999999966664242
+            42666666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366CC6666999999999966
+            66424242666666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366CC6666999999
+            99777777424242C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366CC6666
+            999999995F5F5FC0C0C0C0C0C0868686777777777777666666666666777777C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366
+            CC6666995F5F5F6666666666665F5F5F9966669966668686868080805F5F5F42
+            42425F5F5FC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF99CC
+            CC868686868686868686CC9999F0CAA6FFECCCFFFFCCFFFFCCFFECCCF0CAA686
+            86865555554D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0868686868686F0CAA6FFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCF1
+            F1F1CC99995555554D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0CC9999F0CAA6FFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFF
+            FFFFF8F8F89696964D4D4D666666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0CC9999FFECCCFFFFCCFFECCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFECCC5F5F5F4D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0CC99
+            99F0CAA6FFFFCCFFECCCFFECCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFCCCC99994D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0B2B2
+            B2FFECCCFFECCCFFCC99FFECCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFCCFFFFCCCCCC994D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0CC99
+            99FFECCCFFECCCFFCC99FFECCCFFECCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFF
+            FFCCFFFFCCFFFFCCF0CAA6555555C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0F0CA
+            A6FFECCCFFECCCFFCC99FFECCCFFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCFF
+            FFCCFFFFCCFFFFCCCCCC994D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0B2B2
+            B2FFECCCFFFFCCFFECCCFFCC99FFCC99FFECCCFFFFCCFFFFCCFFFFCCFFFFCCFF
+            FFCCFFFFCCFFFFCCCC9999555555C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0CC99
+            99F0CAA6FFFFCCFFECCCFFECCCFFECCCFFCC99FFECCCFFECCCFFECCCFFECCCFF
+            ECCCFFFFCCFFECCC996666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0CC9999FFECCCFFFFFFFFFFFFFFECCCFFCC99FFECCCFFCC99FFCC99FFECCCFF
+            ECCCFFECCCCC9999996666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0CC9999F0CAA6FFFFFFFFFFFFFFFFCCFFECCCFFCC99FFCC99FFECCCFFFFCCFF
+            ECCCF0CAA6996666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0CC9999CC9999FFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCFFECCCF0
+            CAA6868686C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0CC9999CC9999CC9999CCCC99F0CAA6F0CAA6F0CAA6CC999986
+            8686C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0}
+        end
+        object ListBox3: TListBox
+          Left = 3
+          Top = 44
+          Width = 613
+          Height = 199
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          BevelInner = bvNone
+          BevelOuter = bvNone
+          Ctl3D = False
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ItemHeight = 13
+          Items.Strings = (
+            'F.A.C. de Favorecido'
+            'Manuten'#231#227'o de Carteira'
+            'Pr'#233'-Reservas'
+            'Reservas')
+          ParentCtl3D = False
+          ParentFont = False
+          TabOrder = 0
+        end
+        object CheckBox2: TCheckBox
+          Left = 3
+          Top = 26
+          Width = 89
+          Height = 17
+          Caption = 'Lan'#231'amentos.'
+          TabOrder = 1
+        end
+        object CheckBox3: TCheckBox
+          Left = 99
+          Top = 26
+          Width = 100
+          Height = 17
+          Caption = 'Im'#243'veis porntos.'
+          TabOrder = 2
+        end
+      end
+      object TabSheet6: TTabSheet
+        Caption = 'Fechamentos'
+        ImageIndex = 2
+        DesignSize = (
+          619
+          290)
+        object Label21: TLabel
+          Left = 4
+          Top = 5
+          Width = 208
+          Height = 14
+          Caption = 'Rela'#231#227'o de Reservas e Fechamentos :'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold, fsUnderline]
+          ParentFont = False
+        end
+        object Label22: TLabel
+          Left = 24
+          Top = 320
+          Width = 276
+          Height = 13
+          Caption = 'Relacionar campo de Reserva e Pr'#233'-Reserva em unidade.'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clRed
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object SpeedButton2: TSpeedButton
+          Left = 571
+          Top = 252
+          Width = 48
+          Height = 38
+          Anchors = [akRight, akBottom]
+          Flat = True
+          Glyph.Data = {
+            360C0000424D360C000000000000360000002800000020000000200000000100
+            180000000000000C000000000000000000000000000000000000C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0666666666666666666C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C06666665555555F5F5F424242666666C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0666666777777666699999999777777424242666666C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C09999996699CC3366CC666699999999777777424242666666C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C099CCFF66CCFF3399FF3366CC6666999999997777774242426666
+            66C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366CC6666999999999966664242
+            42666666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366CC6666999999999966
+            66424242666666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366CC6666999999
+            99777777424242C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366CC6666
+            999999995F5F5FC0C0C0C0C0C0868686777777777777666666666666777777C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF3399FF3366
+            CC6666995F5F5F6666666666665F5F5F9966669966668686868080805F5F5F42
+            42425F5F5FC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C066CCFF66CCFF99CC
+            CC868686868686868686CC9999F0CAA6FFECCCFFFFCCFFFFCCFFECCCF0CAA686
+            86865555554D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0868686868686F0CAA6FFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCF1
+            F1F1CC99995555554D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0CC9999F0CAA6FFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFF
+            FFFFF8F8F89696964D4D4D666666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0CC9999FFECCCFFFFCCFFECCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFECCC5F5F5F4D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0CC99
+            99F0CAA6FFFFCCFFECCCFFECCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFCCCC99994D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0B2B2
+            B2FFECCCFFECCCFFCC99FFECCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFCCFFFFCCCCCC994D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0CC99
+            99FFECCCFFECCCFFCC99FFECCCFFECCCFFFFCCFFFFCCFFFFCCFFFFFFFFFFFFFF
+            FFCCFFFFCCFFFFCCF0CAA6555555C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0F0CA
+            A6FFECCCFFECCCFFCC99FFECCCFFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCFF
+            FFCCFFFFCCFFFFCCCCCC994D4D4DC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0B2B2
+            B2FFECCCFFFFCCFFECCCFFCC99FFCC99FFECCCFFFFCCFFFFCCFFFFCCFFFFCCFF
+            FFCCFFFFCCFFFFCCCC9999555555C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0CC99
+            99F0CAA6FFFFCCFFECCCFFECCCFFECCCFFCC99FFECCCFFECCCFFECCCFFECCCFF
+            ECCCFFFFCCFFECCC996666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0CC9999FFECCCFFFFFFFFFFFFFFECCCFFCC99FFECCCFFCC99FFCC99FFECCCFF
+            ECCCFFECCCCC9999996666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0CC9999F0CAA6FFFFFFFFFFFFFFFFCCFFECCCFFCC99FFCC99FFECCCFFFFCCFF
+            ECCCF0CAA6996666C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0CC9999CC9999FFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCFFECCCF0
+            CAA6868686C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0CC9999CC9999CC9999CCCC99F0CAA6F0CAA6F0CAA6CC999986
+            8686C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+            C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0}
+        end
+        object ListBox4: TListBox
+          Left = 4
+          Top = 61
+          Width = 612
+          Height = 180
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          BevelInner = bvNone
+          BevelOuter = bvNone
+          Ctl3D = False
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ItemHeight = 13
+          Items.Strings = (
+            
+              'Nome do Grupo   ou                                              ' +
+              ' Loca'#231#227'o'
+            
+              'Endere'#231'o da Unidade                               Qtde       Ven' +
+              'da               Valor'
+            ''
+            
+              '                                                                ' +
+              '                  '
+            
+              '                                                                ' +
+              '   1,5')
+          ParentCtl3D = False
+          ParentFont = False
+          TabOrder = 0
+        end
+        object ListBox5: TListBox
+          Left = 4
+          Top = 26
+          Width = 169
+          Height = 31
+          BevelInner = bvNone
+          BevelOuter = bvNone
+          Color = clWhite
+          Ctl3D = False
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ItemHeight = 14
+          Items.Strings = (
+            'Grupos de unidades'
+            'Unidades')
+          ParentCtl3D = False
+          ParentFont = False
+          TabOrder = 1
+        end
+      end
+    end
+    object dtpInicial: TDateTimePicker
+      Left = 175
+      Top = 7
+      Width = 89
+      Height = 21
+      Date = 38069.482190254630000000
+      Time = 38069.482190254630000000
+      TabOrder = 1
+    end
+    object dtpFinal: TDateTimePicker
+      Left = 281
+      Top = 6
+      Width = 89
+      Height = 21
+      Date = 38069.482190254630000000
+      Time = 38069.482190254630000000
+      TabOrder = 2
+    end
+    object DBComboBox6: TDBComboBox
+      Left = 135
+      Top = 31
+      Width = 235
+      Height = 21
+      Cursor = crHandPoint
+      Style = csDropDownList
+      BevelKind = bkSoft
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'Descricao'
+      ItemHeight = 13
+      Items.Strings = (
+        'TODOS')
+      ParentCtl3D = False
+      TabOrder = 3
+    end
+  end
+  object PnlFiliais: TPanel
+    Left = 150
+    Top = 98
+    Width = 635
+    Height = 389
+    BevelInner = bvRaised
+    BevelOuter = bvNone
+    Color = clWhite
+    Ctl3D = False
+    ParentCtl3D = False
+    TabOrder = 0
+    object Label10: TLabel
+      Left = 16
+      Top = 119
+      Width = 88
+      Height = 14
+      Caption = 'Filiais - Equipes:'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold, fsUnderline]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label14: TLabel
+      Left = 16
+      Top = 30
+      Width = 196
+      Height = 13
+      Caption = 'Endere'#231'o do IP para sincronizar usu'#225'rios:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+    end
+    object Label17: TLabel
+      Left = 16
+      Top = 54
+      Width = 13
+      Height = 13
+      Caption = 'IP:'
+    end
+    object Label18: TLabel
+      Left = 8
+      Top = 6
+      Width = 165
+      Height = 13
+      Caption = 'Nome ....  '#233' o AS do Sistema'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object DbgFiliais: TDBGrid
+      Left = 14
+      Top = 137
+      Width = 340
+      Height = 274
+      Color = clWhite
+      Ctl3D = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      Options = [dgTitles, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
+      ParentCtl3D = False
+      ParentFont = False
+      PopupMenu = ppmFiliais
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      TitleFont.Style = []
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'NomeFantasia'
+          Width = 310
+          Visible = True
+        end>
+    end
+    object Edit1: TEdit
+      Left = 36
+      Top = 51
+      Width = 317
+      Height = 19
+      TabOrder = 1
+      Text = 'Edit1'
+    end
+    object RadioButton1: TRadioButton
+      Left = 16
+      Top = 76
+      Width = 151
+      Height = 17
+      Caption = 'Esta imobili'#225'ria possui filiais.'
+      Checked = True
+      TabOrder = 2
+      TabStop = True
+    end
+    object RadioButton2: TRadioButton
+      Left = 16
+      Top = 94
+      Width = 176
+      Height = 17
+      Caption = 'Esta imobili'#225'ria n'#227'o possui filiais.'
+      TabOrder = 3
+    end
+  end
+  object PnlVisualizar: TPanel
+    Left = 407
+    Top = 39
+    Width = 371
+    Height = 25
+    Alignment = taLeftJustify
+    BevelInner = bvRaised
+    BevelOuter = bvNone
+    Caption = '         Visualizar :'
+    Color = 8492161
+    Ctl3D = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 1
+    object Image1: TImage
+      Left = 6
+      Top = 8
+      Width = 16
+      Height = 8
+      Picture.Data = {
+        07544269746D6170BE000000424DBE0000000000000076000000280000001000
+        000009000000010004000000000048000000C40E0000C40E0000100000000000
+        0000000000000000800000800000008080008000000080008000808000008080
+        8000C0C0C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+        FF008888888FF8888888888888FFFF88888888888FFFFFF888888888FFFFFFFF
+        8888888FFFFFFFFFF88888FFFFFFFFFFFF888FFFFFFFFFFFFFF8FFFFFFFFFFFF
+        FFFF7777777777777777}
+      Stretch = True
+      Transparent = True
+    end
+  end
+  object PnlBarra: TPanel
+    Left = 0
+    Top = 0
+    Width = 795
+    Height = 41
+    Align = alTop
+    Alignment = taLeftJustify
+    Color = 16416
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    TabOrder = 4
+    object ImgLogo: TImage
+      Left = 20
+      Top = 5
+      Width = 32
+      Height = 32
+      Picture.Data = {
+        07544269746D6170360C0000424D360C00000000000036000000280000002000
+        0000200000000100180000000000000C00000000000000000000000000000000
+        0000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D42A2C932A2C932A2C932A2C932A2C932A2C932A2C932A2C932A2C
+        932A2C93C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        2A2C934144A52E31B12F32B52F32B52F32B52F32B52F32B52F32B52F32B52E31
+        B43235A62A2C932A2C93C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D42A2C933E41A8
+        2E31B42F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32
+        B52F32B52F32B53134AD2A2C93C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D42A2C932A2C932E31B22F32B5
+        2F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32
+        B52F32B52F32B52F32B52F32B42A2C932A2C93C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D42A2C932D30882E31B42F32B52F32B5
+        2F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32
+        B52F32B52F32B52F32B52F32B52F32B5383BAC2A2C93C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D42A2C93282B8B2E31B42F32B52F32B52F32B5
+        2F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32
+        B52F32B52F32B52F32B52F32B52F32B52F32B5383BAD2A2C93C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D42A2C93272A822E31B42F32B52F32B52F32B52F32B5
+        2F32B52E31B32D30AF2D30AF2D30AF2D30AF2D30AF2D30AF2D30AF2D30AF2D30
+        AF2E31B32F32B52F32B52F32B52F32B52F32B52F32B52A2C93C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D42A2C932E31872D30AB2F32B52F32B52F32B52F32B52F32B5
+        2F32B53437A3BEBFCCCACBD7CACBD7CACBD7CACBD7CACBD7CACBD7CACBD7B7B8
+        C52E31A62F32B52F32B52F32B52F32B52F32B52F32B52F32B42A2C93C8D0D4C8
+        D0D4C8D0D4C8D0D42A2C932A2D942F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52E31AECDCED9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBABB
+        CD2E31B32F32B52F32B52F32B52F32B52F32B52F32B52F32B53235AB2A2C93C8
+        D0D4C8D0D42A2C93282B8E2D30AF2F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52E31B49D9FC2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8789
+        BA2E31B42F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52A2C93C8
+        D0D4C8D0D42A2C93292C912F32B52F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B56E70B1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFE5557
+        A82F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B5373AA6C8
+        D0D42A2C93292C952A2D9A2F32B52F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B54446A5F8F9F9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBEBED3538
+        A72F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52E31B32A
+        2C932A2C932A2D9A2D30AB2F32B52F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B52E31A9DEDFE4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC0C1D12E31
+        B12F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52A
+        2C932A2C93292C932E31B42F32B52F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B52E31B4AFB0C8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8E8FBC2F32
+        B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52A
+        2C933C3F8C292C902F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B52F32B57F80B7FFFFFFFFFFFFFFFFFFFFFFFFFEFEFE5B5DAB2F32
+        B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52A
+        2C93252880282B902F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B52F32B55153A7FDFDFDFFFFFFFFFFFFFFFFFFF0F0F23639A42F32
+        B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52A
+        2C93272A84292C902F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B52F32B52F32A2EFEFF1FFFFFFFFFFFFFFFFFFC7C7D42E31B02F32
+        B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52A
+        2C9325287F292C932E31B42F32B52F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B52F32B52E31B3C1C1CFFFFFFFFFFFFFFFFFFF999ABE2F32B52F32
+        B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52A
+        2C932A2C932A2D992D30AD2F32B52F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B52F32B54F52AEEAEAEEFFFFFFFFFFFFFFFFFFF3F3F46466B02F32
+        B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52A
+        2C932A2C932C2FAA2B2E9D2F32B52F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B52E31ADCBCCD9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDBDCE33336
+        AB2F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52E31B42A
+        2C932A2C932E31B3292C922F32B52F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B53C3FA4F6F6F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFE4F52
+        A62F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B53537A72A
+        2C932A2C932A2D9B292C962E31B12F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B54649A5FAFBFBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6567
+        AE2F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52A2C93C8
+        D0D4C8D0D42A2C932E31B12A2D942F32B52F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B53436A7E7E7EBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F84043
+        A42F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B53033AD2A2C93C8
+        D0D4C8D0D42A2C932C2FA92A2D962E31AF2F32B52F32B52F32B52F32B52F32B5
+        2F32B52F32B52F32B57C7DB6FDFDFDFFFFFFFFFFFFFFFFFFFEFEFEA4A6C72E31
+        B22F32B52F32B52F32B52F32B52F32B52F32B52F32B52E31B42A2C93C8D0D4C8
+        D0D4C8D0D4C8D0D42A2C932E31B32A2D932F32B42F32B52F32B52F32B52F32B5
+        2F32B52F32B52F32B52F32B27F81B7DFDFE5FBFBFBEBEBEE9799BF3336AD2F32
+        B52F32B52F32B52F32B52F32B52F32B52F32B52F32B54345AB2A2C93C8D0D4C8
+        D0D4C8D0D4C8D0D42A2C9334379D2D30AC2B2E9C2F32B52F32B52F32B52F32B5
+        2F32B52F32B52F32B52F32B52E31B43133A94447A43639A72E31B42F32B52F32
+        B52F32B52F32B52F32B52F32B52F32B52F32B53437AD2A2C93C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D42A2C932B2EA22D30A82C2F9B2F32B52F32B52F32B5
+        2F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32
+        B52F32B52F32B52F32B52F32B52F32B53437AF2A2C93C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D42A2C932C2FA32C2FA92A2D932E31B32F32B5
+        2F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32
+        B52F32B52F32B52F32B52F32B43B3EAA2A2C93C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D42A2C9332359C2E31B02A2C932C2FA4
+        2E31B42F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32
+        B52F32B52F32B52E31AE2A2C932A2C93C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D42A2C932A2C932D30AB2B2EA2
+        292C912C2F9E2E31B32F32B52F32B52F32B52F32B52F32B52F32B52F32B52F32
+        B52D30A82A2C932A2C93C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D42A2C932A2C93
+        2B2E9F2A2C93292C93292C91292C932A2D942A2C932A2C932A2C932A2C932C2F
+        742A2C932A2C93C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        2A2C932A2C932A2C932A2C932A2C932A2C932A2C932A2C932A2C932A2C932A2C
+        93C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4}
+      Proportional = True
+      Stretch = True
+      Transparent = True
+    end
+    object LblTitulo: TLabel
+      Left = 60
+      Top = 10
+      Width = 86
+      Height = 22
+      Caption = 'Imobiliaria'
+      Color = 16416
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Style = [fsUnderline]
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 41
+    Width = 795
+    Height = 52
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 5
+    object SpeedButton3: TSpeedButton
+      Left = 8
+      Top = 5
+      Width = 80
+      Height = 20
+      Caption = 'Editar'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+    end
+    object btnFormatar: TSpeedButton
+      Left = 94
+      Top = 5
+      Width = 80
+      Height = 20
+      Caption = 'Formatar'
+    end
+    object LblPronto: TLabel
+      Left = 196
+      Top = 2
+      Width = 37
+      Height = 14
+      Caption = 'Pronto'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object LblCodigo: TDBText
+      Left = 78
+      Top = 31
+      Width = 95
+      Height = 14
+      DataField = 'CodigoProduto'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label26: TLabel
+      Left = 8
+      Top = 31
+      Width = 31
+      Height = 14
+      Caption = 'C'#243'd. :'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object LblCep: TLabel
+      Left = 406
+      Top = 38
+      Width = 26
+      Height = 14
+      Caption = 'CEP -'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object lblEndereco: TLabel
+      Left = 249
+      Top = 2
+      Width = 46
+      Height = 14
+      Caption = 'Endere'#231'o'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object lblBairro: TLabel
+      Left = 249
+      Top = 19
+      Width = 29
+      Height = 14
+      Caption = 'Bairro'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object lblSetor: TLabel
+      Left = 406
+      Top = 19
+      Width = 30
+      Height = 14
+      Caption = 'Setor'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object lblCidade_UF: TLabel
+      Left = 249
+      Top = 36
+      Width = 56
+      Height = 14
+      Caption = 'Cidade - UF'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object CheckBox7: TCheckBox
+      Left = 621
+      Top = 3
+      Width = 163
+      Height = 17
+      Caption = 'Restringir acesso este Im'#243'vel.'
+      TabOrder = 0
+    end
+    object TDBEdit
+      Left = 61
+      Top = 28
+      Width = 114
+      Height = 20
+      Ctl3D = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object Panel4: TPanel
+    Left = 0
+    Top = 502
+    Width = 795
+    Height = 42
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 6
+    DesignSize = (
+      795
+      42)
+    object btnMapa: TSpeedButton
+      Left = 312
+      Top = 10
+      Width = 101
+      Height = 25
+      Anchors = [akLeft, akBottom]
+      GroupIndex = -1
+      Caption = 'Mapa'
+      Flat = True
+      Glyph.Data = {
+        360C0000424D360C000000000000360000002800000020000000200000000100
+        180000000000000C000000000000000000000000000000000000C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4DDDDDDDDDDDDC8D0D4C8D0D4C8D0
+        D4DDDDDDC8D0D4DDDDDDC8D0D4C8D0D4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+        DDDDDDDDDDDDDDDDC8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4DDDDDDC8D0D4C8D0D4DDDDDDC8D0D4C8D0D4DDDDDDC8D0D4DDDD
+        DDFFFFFFDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDA4A0A0DDDDDDA4A0A0A4
+        A0A0DDDDDD000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4DDDDDDC8D0D4DDDDDDDDDDDDDDDDDDDDDDDDDDDD
+        DDDDDDDDA4A0A0DDDDDDA4A0A0DDDDDDA4A0A0A4A0A0DDDDDDA4A0A0A4A0A0DD
+        DDDDA4A0A0000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4DDDDDDC8D0D4DDDDDDDDDDDDDDDDDDA4A0A0DDDDDDA4A0A0DDDD
+        DDA4A0A0DDDDDD444444444444A4A0A0A4A0A0DDDDDDA4A0A0A4A0A0A4A0A0A4
+        A0A0A4A0A0A4A0A0000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4DDDDDDDDDDDDA4A0A0DDDDDDA4A0A0A4A0A0A4A0A0A4A0A0A4A0
+        A0DDDDDDA4A0A00099FF0099FF444444A4A0A0A4A0A0A4A0A0A4A0A0A4A0A0A4
+        A0A0A4A0A0A4A0A0000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4DDDDDDA4A0A0A4A0A0A4A0A0A4A0A0A4A0A0A4A0A0DDDDDDA4A0A0A4A0
+        A0A4A0A0A4A0A0A4A0A00099FF0099FF444444A4A0A0A4A0A0A4A0A0A4A0A0A4
+        A0A0A4A0A0A4A0A0000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4000000000000A4A0A0A4A0A0A4A0A0A4A0A0A4A0A0A4A0
+        A0A4A0A0A4A0A0A4A0A0A4A0A00099FF0099FF444444A4A0A0A4A0A0A4A0A0A4
+        A0A0A4A0A0A4A0A0A4A0A0000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4000000000000000000A4A0A0A4A0A0A4A0
+        A0A4A0A0A4A0A0A4A0A0A4A0A0777777A4A0A0A4A0A0A4A0A0A4A0A0777777A4
+        A0A0A4A0A0A4A0A0A4A0A0000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4000000000000A4A0
+        A0A4A0A0A4A0A0777777A4A0A0A4A0A0A4A0A0A4A0A00099FF444444A4A0A0A4
+        A0A0A4A0A0777777A4A0A0000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4000000DDDDDD0000
+        00000000A4A0A0A4A0A0A4A0A0A4A0A0A4A0A0A4A0A0A4A0A00099FF444444A4
+        A0A0A4A0A0A4A0A0A4A0A0777777000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4000000DDDDDD0000
+        00C8D0D4000000A4A0A0777777A4A0A0777777A4A0A0A4A0A00099FF0099FF44
+        4444A4A0A0A4A0A0777777A4A0A0000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4000000DDDDDD0000
+        00C8D0D4C8D0D4000000000000777777A4A0A0777777A4A0A0777777A4A0A077
+        7777A4A0A0777777A4A0A0777777A4A0A0000000C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4000000A4A0A00000
+        00C8D0D4C8D0D4C8D0D4C8D0D4000000777777777777777777777777A4A0A000
+        99FF444444A4A0A0777777A4A0A0777777000000C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D40000000000007777770000
+        00000000C8D0D4C8D0D4C8D0D4C8D0D4000000000000777777A4A0A077777777
+        7777A4A0A0777777A4A0A0777777A4A0A0000000C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4000000DDDDDDDDDDDDDDDDDDDDDD
+        DDDDDDDD000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4000000777777A4A0A0A4
+        A0A07777770099FF444444A4A0A0777777A4A0A0000000C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4000000FFFFFFDDDDDD4444444444
+        44DDDDDD000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D400000077777777
+        7777A4A0A07777770099FF444444A4A0A0777777000000C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4000000FFFFFF444444DDDDDD4444
+        44DDDDDD000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D400000077
+        77777777777777770099FF444444777777777777000000C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4000000FFFFFF4444444444444444
+        44DDDDDD000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D400000077
+        7777777777777777777777777777777777777777000000C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4000000FFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFF000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D400000077
+        77777777770099FF444444777777777777777777000000C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D40000000000000000000000
+        00000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D400000077777777
+        7777444444777777777777777777777777000000C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+        D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D400000044444477777777777777
+        77770099FF777777777777777777777777000000C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+        D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D400000077777777777777777744444444
+        4444777777777777777777000000000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+        D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D40000007777774444447777770099FF77
+        7777444444444444000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+        D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D400000077777744444477777744
+        4444444444777777000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+        D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D400000077777744444477
+        77770099FF444444777777000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+        D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D400000077777744
+        44447777774444440099FF444444000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+        D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D400000000
+        0000444444777777444444777777444444000000000000C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+        D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4000000000000000000000000000000C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+        D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+        D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+        D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+        D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8
+        D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4}
+    end
+    object btnDados: TSpeedButton
+      Left = 208
+      Top = 10
+      Width = 101
+      Height = 25
+      Anchors = [akLeft, akBottom]
+      GroupIndex = -1
+      Down = True
+      Caption = 'Dados'
+      Flat = True
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+        5555555FFFFFFFFFF5555550000000000555557777777777F5555550FFFFFFFF
+        0555557F5FFFF557F5555550F0000FFF0555557F77775557F5555550FFFFFFFF
+        0555557F5FFFFFF7F5555550F000000F0555557F77777757F5555550FFFFFFFF
+        0555557F5FFFFFF7F5555550F000000F0555557F77777757F5555550FFFFFFFF
+        0555557F5FFF5557F5555550F000FFFF0555557F77755FF7F5555550FFFFF000
+        0555557F5FF5777755555550F00FF0F05555557F77557F7555555550FFFFF005
+        5555557FFFFF7755555555500000005555555577777775555555555555555555
+        5555555555555555555555555555555555555555555555555555}
+      NumGlyphs = 2
+    end
+    object lblCatalogador: TLabel
+      Left = 83
+      Top = 22
+      Width = 31
+      Height = 14
+      Caption = 'Senna'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label19: TLabel
+      Left = 10
+      Top = 22
+      Width = 64
+      Height = 14
+      Caption = 'Catalogador :'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsUnderline]
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object lblDataCatalogacao: TLabel
+      Left = 10
+      Top = 5
+      Width = 55
+      Height = 17
+      AutoSize = False
+      Caption = '01/08/2003'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object PnlFerramentasMapa: TPanel
+      Left = 653
+      Top = 4
+      Width = 129
+      Height = 36
+      Anchors = [akRight, akBottom]
+      TabOrder = 0
+      Visible = False
+      object Btnzoom_Mais: TSpeedButton
+        Left = 2
+        Top = 0
+        Width = 19
+        Height = 16
+        Flat = True
+        Glyph.Data = {
+          F6000000424DF600000000000000760000002800000010000000100000000100
+          04000000000080000000C40E0000C40E00001000000000000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00666666666666
+          4466666666666664744666666666664744466666666664744466666600004744
+          46666600777F8444666660877777F8086666607770777F066666077770777770
+          6666077000007770666607F770777770666607F770777770666660FF77777706
+          6666608FFF777806666666007777006666666666000066666666}
+      end
+      object BtnZoom_Menos: TSpeedButton
+        Left = 2
+        Top = 18
+        Width = 19
+        Height = 16
+        Flat = True
+        Glyph.Data = {
+          F6000000424DF600000000000000760000002800000010000000100000000100
+          04000000000080000000C40E0000C40E00001000000000000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00666666666666
+          4466666666666664744666666666664744466666666664744466666600004744
+          46666600777F8444666660877777F8086666607777777F066666077777777770
+          6666077777777770666607F700007770666607F777777770666660FF77777706
+          6666608FFF777806666666007777006666666666000066666666}
+      end
+      object BtnInfo_Log: TSpeedButton
+        Left = 81
+        Top = 0
+        Width = 19
+        Height = 16
+        Flat = True
+        Glyph.Data = {
+          F6000000424DF600000000000000760000002800000010000000100000000100
+          04000000000080000000CE0E0000C40E00001000000000000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00666666666666
+          6666666666000066666666660000000066666660000000000666660000FFFF00
+          00666600000FF00000666000000FF00000066000000FF00000066000000FF000
+          0006600000FFF000000666000000000000666600000FF00000666660000FF000
+          0666666600000000666666666600006666666666666666666666}
+      end
+      object BtnMover: TSpeedButton
+        Left = 57
+        Top = 0
+        Width = 19
+        Height = 16
+        Flat = True
+        Glyph.Data = {
+          F6000000424DF600000000000000760000002800000010000000100000000100
+          04000000000080000000CE0E0000C40E00001000000000000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00666666666666
+          4466666660FFFFFF066666660FFFFFFF06666660FFFFFFFFF066660FFFFFFFFF
+          F066660FFFFFFFFFFF0660FFFFFFFFFFFF060FFF0FFFFFFFFF060FF00FFFFFFF
+          FFF060060FFFFFFF0FF06660FF0FF0FF0FF06660FF0FF0FF00F0660FF00FF0FF
+          0606660FF00FF0FF06666660060FF00066666666666006666666}
+      end
+      object Btnzoom_Geral: TSpeedButton
+        Left = 34
+        Top = 0
+        Width = 19
+        Height = 16
+        Flat = True
+        Glyph.Data = {
+          F6000000424DF600000000000000760000002800000010000000100000000100
+          04000000000080000000CE0E0000C40E00001000000000000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00666666666666
+          66666666668888866666666688CCC22886666668CCCC2222C8666687CC762222
+          26866686C722222222866876C7222222CCC8687CC222222C22C868C7CCC22C22
+          24C86877C2CCCCCC4C286877CC2CCC2C4C2866877C2222222286668CCCC2C222
+          22866668CC6CC222286666668882C22886666666668888866666}
+      end
+      object BtnFullscren: TSpeedButton
+        Left = 106
+        Top = 18
+        Width = 19
+        Height = 16
+        Caption = 'F'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object btnTiraBairros: TSpeedButton
+        Left = 82
+        Top = 18
+        Width = 19
+        Height = 16
+        Caption = 'B'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object SpeedButton11: TSpeedButton
+        Left = 58
+        Top = 18
+        Width = 19
+        Height = 16
+        Caption = 'R'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object SpeedButton16: TSpeedButton
+        Left = 34
+        Top = 18
+        Width = 19
+        Height = 16
+        Caption = 'R'
+        Flat = True
+      end
+    end
+    object RdbTematico: TRadioButton
+      Left = 416
+      Top = 13
+      Width = 106
+      Height = 17
+      Anchors = [akLeft, akTop, akRight]
+      Caption = 'Mapa tem'#225'tico'
+      TabOrder = 1
+      Visible = False
+    end
+    object RdbPontual: TRadioButton
+      Left = 514
+      Top = 13
+      Width = 101
+      Height = 17
+      Anchors = [akLeft, akTop, akRight]
+      Caption = 'Mapa pontual'
+      TabOrder = 2
+      Visible = False
+    end
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Filter = 
+      'Arquivos de imagem jpeg (*.jpg)|*.jpg|Todos os arquivos (*.*)|*.' +
+      '*'
+    Title = 'Buscar Logos para Imobili'#225'ria'
+    Left = 15
+    Top = 227
+  end
+  object ppmFiliais: TPopupMenu
+    Left = 15
+    Top = 315
+    object AdicionarFilial1: TMenuItem
+      Caption = 'Adicionar Filial'
+      OnClick = AdicionarFilial1Click
+    end
+    object RemoverFilial1: TMenuItem
+      Caption = 'Remover Filial'
+    end
+    object N1: TMenuItem
+      Caption = '-'
+    end
+    object IrparadetalhesdaFilial1: TMenuItem
+      Caption = 'Ir para detalhes da Filial'
+    end
+  end
+  object ppmendereco: TPopupMenu
+    Left = 15
+    Top = 287
+    object AdicionarEndereo1: TMenuItem
+      Caption = 'Adicionar Endere'#231'o'
+      OnClick = AdicionarEndereo1Click
+    end
+    object RemoverEndereo1: TMenuItem
+      Caption = 'Remover Endere'#231'o'
+    end
+    object N2: TMenuItem
+      Caption = '-'
+    end
+    object EditarEndereo1: TMenuItem
+      Caption = 'Editar Endere'#231'o'
+    end
+  end
+  object ppmTelefone: TPopupMenu
+    Left = 15
+    Top = 199
+    object AdicionarTelefone1: TMenuItem
+      Caption = 'Adicionar Telefone'
+      OnClick = AdicionarTelefone1Click
+    end
+    object ExcluirTelefone1: TMenuItem
+      Caption = 'Excluir Telefone'
+    end
+    object N3: TMenuItem
+      Caption = '-'
+    end
+    object EditarTelefone1: TMenuItem
+      Caption = 'Editar Telefone'
+    end
+  end
+  object PpmIcone: TPopupMenu
+    AutoPopup = False
+    Left = 15
+    Top = 256
+    object AdicionarImagemdoFavorecido1: TMenuItem
+      Caption = 'Editar Icone do Parceiro'
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 16
+    Top = 354
+    object Arquivo1: TMenuItem
+      Caption = 'Arquivo'
+      object Senha1: TMenuItem
+        Caption = 'Senha...'
+      end
+      object MenuItem1: TMenuItem
+        Caption = '-'
+      end
+      object Sincronizarcommeuservidor1: TMenuItem
+        Caption = 'Sincronizar com meu servidor....'
+      end
+      object MenuItem2: TMenuItem
+        Caption = '-'
+      end
+      object Configuraes2: TMenuItem
+        Caption = 'Configura'#231#245'es'
+      end
+      object N4: TMenuItem
+        Caption = '-'
+      end
+      object Backup1: TMenuItem
+        Caption = 'Backup...'
+      end
+      object RestaurarBackup1: TMenuItem
+        Caption = 'Restaurar Backup...'
+      end
+      object MenuItem3: TMenuItem
+        Caption = '-'
+      end
+      object Sair1: TMenuItem
+        Caption = 'Sair...'
+      end
+    end
+    object Exibir1: TMenuItem
+      Caption = 'Exibir'
+      object PaineldeControle1: TMenuItem
+        Caption = 'Painel de Controle'
+      end
+    end
+    object Ferramentas1: TMenuItem
+      Caption = 'Ferramentas'
+      object elaCheia1: TMenuItem
+        Caption = 'Tela Cheia'
+        ShortCut = 122
+      end
+      object MenuItem4: TMenuItem
+        Caption = '-'
+      end
+      object Opes1: TMenuItem
+        Caption = 'Op'#231#245'es do Usu'#225'rio'
+      end
+      object Restringiracessoaimveis1: TMenuItem
+        Caption = 'Op'#231#245'es Gerenciais'
+      end
+    end
+    object Ajuda1: TMenuItem
+      Caption = 'Ajuda'
+      object TpicosdaAjuda1: TMenuItem
+        Caption = 'T'#243'picos da Ajuda'
+        Enabled = False
+      end
+      object N5: TMenuItem
+        Caption = '-'
+      end
+      object SobreoImbile201: TMenuItem
+        Caption = 'Tour pelo produto'
+        Enabled = False
+      end
+      object SobreoImbile202: TMenuItem
+        Caption = 'Sobre o GeoMobile 3.0...'
+      end
+    end
+  end
+end

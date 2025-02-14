@@ -1,0 +1,1440 @@
+object FrmPerguntas_Captacao: TFrmPerguntas_Captacao
+  Left = 433
+  Top = 303
+  Width = 444
+  Height = 401
+  Caption = 'FrmPerguntas_Captacao'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PnlCaptador: TPanel
+    Left = 0
+    Top = 74
+    Width = 389
+    Height = 275
+    BevelOuter = bvNone
+    TabOrder = 2
+    Visible = False
+    object SpeedButton16: TSpeedButton
+      Left = 15
+      Top = 240
+      Width = 75
+      Height = 20
+      Caption = '< &Voltar'
+      OnClick = SpeedButton16Click
+    end
+    object SpeedButton15: TSpeedButton
+      Left = 95
+      Top = 240
+      Width = 75
+      Height = 20
+      Caption = '&Pr'#243'ximo  >'
+      OnClick = SpeedButton15Click
+    end
+    object Label8: TLabel
+      Left = 16
+      Top = 16
+      Width = 56
+      Height = 14
+      Caption = 'Captador :'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+    end
+    object Label15: TLabel
+      Left = 10
+      Top = 50
+      Width = 38
+      Height = 14
+      Caption = 'Nome :'
+      Color = clBtnFace
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbldatacaptacao: TLabel
+      Left = 122
+      Top = 204
+      Width = 182
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Segunda - feira 01 de mar'#231'o de 2.003.'
+      Color = clBtnFace
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 122
+      Top = 187
+      Width = 92
+      Height = 13
+      Caption = 'Data da capta'#231#227'o :'
+    end
+    object DbgEnderecos: TDBGrid
+      Left = 59
+      Top = 68
+      Width = 289
+      Height = 92
+      Color = clWhite
+      Ctl3D = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      Options = [dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 0
+      TitleFont.Charset = ANSI_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Arial'
+      TitleFont.Style = []
+      Visible = False
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'logradouro'
+          Width = 30
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'endereco'
+          Width = 250
+          Visible = True
+        end>
+    end
+    object Edit2: TEdit
+      Left = 59
+      Top = 47
+      Width = 289
+      Height = 19
+      CharCase = ecUpperCase
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 1
+    end
+  end
+  object PnlChaves: TPanel
+    Left = 0
+    Top = 74
+    Width = 389
+    Height = 275
+    BevelOuter = bvNone
+    TabOrder = 4
+    Visible = False
+    object SpeedButton3: TSpeedButton
+      Left = 95
+      Top = 240
+      Width = 75
+      Height = 20
+      Caption = '&Proximo >'
+      NumGlyphs = 2
+      OnClick = SpeedButton3Click
+    end
+    object SpeedButton4: TSpeedButton
+      Left = 15
+      Top = 240
+      Width = 75
+      Height = 20
+      Caption = '< &Voltar'
+      OnClick = SpeedButton4Click
+    end
+    object Label25: TLabel
+      Left = 12
+      Top = 34
+      Width = 85
+      Height = 13
+      Caption = 'Local da chaves :'
+      Color = clBtnFace
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsUnderline]
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object lblDataChave: TLabel
+      Left = 172
+      Top = 201
+      Width = 151
+      Height = 14
+      Alignment = taRightJustify
+      Caption = '01 de Agosto  2.003.  14:20 hs.'
+      Color = clBtnFace
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 16
+      Top = 8
+      Width = 165
+      Height = 13
+      Caption = 'Se for lan'#231'amento n'#227'o tem chaves'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clRed
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Memo1: TMemo
+      Left = 104
+      Top = 38
+      Width = 227
+      Height = 157
+      Ctl3D = False
+      Lines.Strings = (
+        'Memo1')
+      ParentCtl3D = False
+      TabOrder = 0
+    end
+  end
+  object pnlMeiosComunicacao: TPanel
+    Left = 0
+    Top = 74
+    Width = 389
+    Height = 275
+    BevelOuter = bvNone
+    TabOrder = 3
+    Visible = False
+    object SpeedButton1: TSpeedButton
+      Left = 95
+      Top = 236
+      Width = 75
+      Height = 20
+      Caption = '&Pr'#243'ximo  >'
+      NumGlyphs = 2
+      OnClick = SpeedButton1Click
+    end
+    object SpeedButton2: TSpeedButton
+      Left = 15
+      Top = 236
+      Width = 75
+      Height = 20
+      Caption = '< &Voltar'
+      OnClick = SpeedButton2Click
+    end
+    object Label11: TLabel
+      Left = 18
+      Top = 8
+      Width = 236
+      Height = 13
+      Caption = 'Selecione o(s) Meio(s) de Comunica'#231#227'o desejado,'
+    end
+    object Label12: TLabel
+      Left = 19
+      Top = 22
+      Width = 135
+      Height = 13
+      Caption = 'para anunciar esta unidade :'
+    end
+    object clbMeios: TCheckListBox
+      Left = 54
+      Top = 50
+      Width = 244
+      Height = 171
+      Ctl3D = False
+      ItemHeight = 13
+      ParentCtl3D = False
+      TabOrder = 0
+    end
+  end
+  object PnlProprietario: TPanel
+    Left = 0
+    Top = 74
+    Width = 389
+    Height = 275
+    BevelOuter = bvNone
+    TabOrder = 5
+    Visible = False
+    object Label23: TLabel
+      Left = 14
+      Top = 12
+      Width = 67
+      Height = 13
+      Caption = 'Propriet'#225'rio(s):'
+      Color = clBtnFace
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsUnderline]
+      ParentColor = False
+      ParentFont = False
+    end
+    object SpeedButton12: TSpeedButton
+      Left = 95
+      Top = 236
+      Width = 75
+      Height = 20
+      Caption = '&Pr'#243'ximo  >'
+      NumGlyphs = 2
+      OnClick = SpeedButton12Click
+    end
+    object SpeedButton13: TSpeedButton
+      Left = 15
+      Top = 236
+      Width = 75
+      Height = 20
+      Caption = '<&Voltar'
+      OnClick = SpeedButton13Click
+    end
+    object DBGrid1: TDBGrid
+      Left = 12
+      Top = 47
+      Width = 363
+      Height = 177
+      TabStop = False
+      Color = clWhite
+      Ctl3D = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      Options = [dgTitles, dgColumnResize, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
+      ParentCtl3D = False
+      ParentFont = False
+      PopupMenu = ppmproprietario
+      TabOrder = 0
+      TitleFont.Charset = ANSI_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = [fsBold]
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'razaosocial'
+          Title.Caption = 'Nome'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clWindowText
+          Title.Font.Height = -11
+          Title.Font.Name = 'Arial'
+          Title.Font.Style = []
+          Width = 300
+          Visible = True
+        end>
+    end
+  end
+  object PnlDisponibiliadade: TPanel
+    Left = 0
+    Top = 74
+    Width = 389
+    Height = 275
+    BevelOuter = bvNone
+    TabOrder = 1
+    object Label4: TLabel
+      Left = 14
+      Top = 9
+      Width = 187
+      Height = 13
+      Caption = 'Confirma a disponibilidade da unidade ?'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object SpeedButton7: TSpeedButton
+      Left = 260
+      Top = 240
+      Width = 75
+      Height = 20
+      Caption = '&Cancelar'
+      NumGlyphs = 2
+      OnClick = SpeedButton7Click
+    end
+    object SpeedButton10: TSpeedButton
+      Left = 15
+      Top = 240
+      Width = 75
+      Height = 20
+      Caption = '< &N'#227'o'
+      Enabled = False
+    end
+    object BtnConfirma_Valor: TSpeedButton
+      Left = 95
+      Top = 240
+      Width = 75
+      Height = 20
+      Caption = '&Sim  >'
+      OnClick = BtnConfirma_ValorClick
+    end
+    object DBText3: TDBText
+      Left = 211
+      Top = 68
+      Width = 54
+      Height = 13
+      Color = clBtnFace
+      DataField = 'DtDisponibilizacaoVenda'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object Label39: TLabel
+      Left = 17
+      Top = 43
+      Width = 37
+      Height = 13
+      Caption = 'Venda :'
+      Color = clBtnFace
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object Label1: TLabel
+      Left = 64
+      Top = 67
+      Width = 30
+      Height = 13
+      Caption = 'Valor :'
+      Color = clBtnFace
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object ShpSituacao: TShape
+      Left = 73
+      Top = 43
+      Width = 22
+      Height = 18
+      Brush.Color = 8454016
+    end
+    object DBText1: TDBText
+      Left = 211
+      Top = 140
+      Width = 54
+      Height = 13
+      Color = clBtnFace
+      DataField = 'DtDisponibilizacaoVenda'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object Label9: TLabel
+      Left = 17
+      Top = 115
+      Width = 48
+      Height = 13
+      Caption = 'Loca'#231#227'o :'
+      Color = clBtnFace
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object Label10: TLabel
+      Left = 65
+      Top = 139
+      Width = 30
+      Height = 13
+      Caption = 'Valor :'
+      Color = clBtnFace
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object Shape1: TShape
+      Left = 73
+      Top = 115
+      Width = 22
+      Height = 18
+      Brush.Color = 8454016
+    end
+    object Label14: TLabel
+      Left = 18
+      Top = 182
+      Width = 79
+      Height = 13
+      Caption = 'I.P.T.U. mensal :'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object Label17: TLabel
+      Left = 34
+      Top = 162
+      Width = 63
+      Height = 13
+      Caption = 'Condom'#237'nio :'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object Label18: TLabel
+      Left = 25
+      Top = 204
+      Width = 72
+      Height = 13
+      Caption = 'I.P.T.U. anual :'
+      Color = clWhite
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object DBText2: TDBText
+      Left = 211
+      Top = 162
+      Width = 56
+      Height = 14
+      Color = clWhite
+      DataField = 'DtAtualizacaoVrCondominio'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object DBText4: TDBText
+      Left = 211
+      Top = 182
+      Width = 56
+      Height = 14
+      Color = clWhite
+      DataField = 'DtAtualizacaoIptuParc'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object DBText5: TDBText
+      Left = 211
+      Top = 204
+      Width = 56
+      Height = 14
+      Color = clWhite
+      DataField = 'DtAtualizacaoIptuAnual'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object DBText6: TDBText
+      Left = 321
+      Top = 44
+      Width = 54
+      Height = 14
+      Color = clBtnFace
+      DataField = 'DtDisponibilizacaoLocacao'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object DBText7: TDBText
+      Left = 321
+      Top = 116
+      Width = 54
+      Height = 14
+      Color = clBtnFace
+      DataField = 'DtDisponibilizacaoLocacao'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+    object DlbDisponibilidade: TDBLookupComboBox
+      Left = 101
+      Top = 41
+      Width = 215
+      Height = 19
+      BevelOuter = bvNone
+      BevelKind = bkSoft
+      Ctl3D = False
+      DataField = 'Cod_Situacao'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      KeyField = 'Codigo'
+      ListField = 'Descricao'
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object DBEdit2: TDBEdit
+      Left = 101
+      Top = 64
+      Width = 105
+      Height = 19
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'VrProprietario_Venda'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 1
+    end
+    object DBLookupComboBox1: TDBLookupComboBox
+      Left = 101
+      Top = 113
+      Width = 215
+      Height = 19
+      BevelOuter = bvNone
+      BevelKind = bkSoft
+      Ctl3D = False
+      DataField = 'Cod_Situacao'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      KeyField = 'Codigo'
+      ListField = 'Descricao'
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 2
+    end
+    object DBEdit3: TDBEdit
+      Left = 101
+      Top = 136
+      Width = 105
+      Height = 19
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'VrProprietario_Venda'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 3
+    end
+    object DBEdit4: TDBEdit
+      Left = 100
+      Top = 180
+      Width = 107
+      Height = 19
+      CharCase = ecUpperCase
+      Color = clWhite
+      Ctl3D = False
+      DataField = 'VrIptuMensal'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 4
+    end
+    object DBEdit5: TDBEdit
+      Left = 100
+      Top = 201
+      Width = 107
+      Height = 19
+      CharCase = ecUpperCase
+      Color = clWhite
+      Ctl3D = False
+      DataField = 'VrIptuAnual'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 5
+    end
+    object DBEdit6: TDBEdit
+      Left = 100
+      Top = 159
+      Width = 107
+      Height = 19
+      CharCase = ecUpperCase
+      Color = clWhite
+      Ctl3D = False
+      DataField = 'VrCondominio'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 6
+    end
+    object DBCheckBox3: TDBCheckBox
+      Left = 296
+      Top = 161
+      Width = 58
+      Height = 17
+      Caption = 'Isento.'
+      Color = clBtnFace
+      DataField = 'IsentoCondominio'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 7
+      ValueChecked = 'True'
+      ValueUnchecked = 'False'
+    end
+    object DBCheckBox4: TDBCheckBox
+      Left = 296
+      Top = 181
+      Width = 58
+      Height = 17
+      Caption = 'Isento.'
+      Color = clBtnFace
+      DataField = 'IsentoIptu'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 8
+      ValueChecked = 'True'
+      ValueUnchecked = 'False'
+    end
+  end
+  object PnlConfirmaCaptacao: TPanel
+    Left = 0
+    Top = 73
+    Width = 426
+    Height = 281
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    Visible = False
+    object Shape4: TShape
+      Left = 19
+      Top = 51
+      Width = 88
+      Height = 117
+      Brush.Color = clGray
+      Pen.Color = clGray
+    end
+    object SpeedButton14: TSpeedButton
+      Left = 220
+      Top = 240
+      Width = 114
+      Height = 20
+      Caption = 'Confirmar a capta'#231#227'o'
+      NumGlyphs = 2
+      OnClick = SpeedButton14Click
+    end
+    object Label5: TLabel
+      Left = 124
+      Top = 53
+      Width = 210
+      Height = 14
+      Caption = 'Deseja verificar, se existe algum Candidato,'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+    end
+    object SpeedButton5: TSpeedButton
+      Left = 95
+      Top = 240
+      Width = 75
+      Height = 20
+      Caption = '&Pr'#243'ximo  >'
+      Enabled = False
+      NumGlyphs = 2
+    end
+    object SpeedButton6: TSpeedButton
+      Left = 15
+      Top = 240
+      Width = 75
+      Height = 20
+      Caption = '< &Voltar'
+      OnClick = SpeedButton6Click
+    end
+    object Shape3: TShape
+      Left = 16
+      Top = 48
+      Width = 88
+      Height = 117
+    end
+    object Label6: TLabel
+      Left = 123
+      Top = 70
+      Width = 124
+      Height = 13
+      Caption = ' para esta unidade agora :'
+    end
+    object Image2: TImage
+      Left = 29
+      Top = 59
+      Width = 62
+      Height = 73
+      Picture.Data = {
+        07544269746D6170922E0000424D922E00000000000036000000280000003900
+        00004500000001001800000000005C2E0000232E0000232E0000000000000000
+        0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFBFBF7F5F4E9
+        E7E4DFDAD6DFDAD6E8E5E1F5F4F1FCFCFBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7F5F4BEBBBB74
+        7D7C445758303D3C1B2626121719171F20191F20131A1C161E1F26353440504F
+        676F6EADAAABF4F2EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEB
+        E8E88491923042421B26262F40405C6B6B939797D8CFCBF1EEEAF6F4F1F6F3F1
+        F5F2F0E3DDDBA9A4A267737337464619242629393A727979D3CFCDFDFDFCFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFF0EFEF8792932A3A3B1F2E30616B6BBEB9BBF5F3F2CCC8C57E8381
+        4D5C5A3D4D4D3342423341413645453E4F4E616A69A5A3A3ECE9E7DCD6D3757D
+        7C293737253130686F6CD8D6D3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFDFDFCB2BBB94554532432326A7676E0DAD9FFFFFF
+        DED9D85C6868161F200E13150E13150E13150E13150E13150E13150E13150E13
+        150E13152332335A6463B0B5B1EBE7E57D82802A37372F4040959FA0F7F7F7FF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5F4F38A95952A39393E4E4E
+        AFB2B0FFFFFFFFFFFFFFFFFFEFEBEA5B6D6D0E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13151924264E5F60B4C1C1DA
+        D5D4556160263536707979E7E5E3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFECE9E8
+        767E7C263536616E6FF8F6F6FFFFFFFFFFFFFFFFFFFFFFFFFDFCFB6477791015
+        160E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13151D2A2C747D7CE7E5E38C9494223233546767D8DFDFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFE5E4E268706F2B3B3C8B9291FFFEFCFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFEFC717A791920200E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E1315121619455658C0CACB
+        A2ADAD2C3B3B51605FD5DBDBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBE9E8737A792C3C3D949D9EFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7983841D29280E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E1315313F3FA3A7A7B0AEAF324141556464D9E0E0FFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5F3F385908F2C3C
+        3D929A9AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF76
+        7F801B26260E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13152A36339DA1A2B1AE
+        AF26353659696AE1E6E6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFAF9F8969FA12A3A3B777C7CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFF8490922230320E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E1315263332A0A5A69CA6A7233032787E7DEFEEEEFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFC2CACB3A4645536060FDFCFBFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF909C9F28393A0E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E1315384646BFC7C68087842A
+        3B3B9DA4A5FAFAF9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE3E8E85A6868364746EA
+        E7E6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFF9CA8A92D41430E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13154F6162D7DCDB4E5D5B3D4948D3D7D8FFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF9
+        FAF9949D9E26353598A1A2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCDC6C54A5A590E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13151216197C8687D0CAC72937376F7371
+        EFEFEDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFD1D8D93A4A49566363FFFEFEFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2EFED5A6C
+        6D1015160E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        1B2A2BA6B1B28B9391263536BAC4C4FEFEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F7879192203030DCD6D3
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFF7681821A25260E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13154E5E5ED7DBD93749495A6868EBEEEEFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        D7DEDE3C4D4D5F6E6DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF929DA02A3B3C0E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E1315172223969C
+        9C939C9C233234B8C0BEFEFEFEFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFF8F8F78F9594202F30E7E2E0FFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFC5BEBB4453530E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13153E4B4AD7DAD83647475E6D6DEFF2F3FFFFFFFFFFFFFF
+        FFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE4E8E84A5856556363FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFEAE7E55466680E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E1315151D1D9BA1A17D81812C
+        3937DADEDCFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFE
+        FEC2CBCB223032A8A3A3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAF8F75A6E6F
+        0E13151015161015160E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13154B5A5ACFCFCC2532328A8F8DFAF9F9FFFFFFFFFFFFFFFFFF00FFFF
+        FFFFFFFFFFFFFFFFFFFFF3F3F2707473304141FDFCFBFFFFFFFFFFFFFFFFFFF0
+        F2F0B1BBB9A7B1B0DDDBD9FDFDFCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFDFCFB617172131A1C161D1D161D1D0E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E1315192325BBC8C9556464475959EDF0F0
+        FFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFE7EBEC445554607070FF
+        FFFFFFFFFFFFFFFFE0E1E0576363162021131A1C273637717F7FF6F4F3FFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF727B7B1B2626151A1B151A
+        1B0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        7A817F9A9490243030DEE2E1FFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFF
+        FFFFD3DBDB202E30B2ADADFFFFFFFFFFFFFAF8F7949C9C1720220E13150E1315
+        0E13151A27296E7B7BFFFEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFB0B4B2475858202D2C1A23230E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13153A4B4BDADDDB1F2B2CA09F9EFCFBFBFFFFFFFFFF
+        FF00FFFFFFFFFFFFFFFFFFFBFBFBA0A0A0212D2FF6F4F3FFFFFFFFFFFFE1E2E3
+        5460610E13150E13150E1315101617131B1D283A3BBBBEBBFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5F3F2BDB8BA5460601923250E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E1315172122C4CDCC4A5C
+        5B556362F4F6F7FFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFF2F5F55C6A6B4A5B5A
+        FFFFFFFFFFFFFFFFFFD0D8D83C4D4D0E13150E13151621244758575A696A1A25
+        26506061FCFCFCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFC2C9C840515312171A0E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E131590929070757341504EF1F3F3FFFFFFFFFFFF00FFFFFFFFFFFF
+        FFFFFFEDEFF0455656637372FFFFFFFFFFFFFFFFFFF4F5F49A9E9F4C5B5A1D2B
+        2D2D3E3EC2BCBDB2C0C2394B4B28393AACAEAFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8693952636370E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E1315526263B1ADAD212C2CE7EAE9FF
+        FFFFFFFFFF00FFFFFFFFFFFFFFFFFFE8EAEA343F3EA69F9CFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFAF9F7D5CDCBB4B0B0FFFEFEFAF9F88591922432325B6C6DFF
+        FEFEFFFFFFFFFFFFFFFFFFECEBEAA4A9A986908E8A96969FA5A6CAC6C4E7E2DF
+        919A9A30424212191B0E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13153B
+        4B4BD5D5D1151E20CCCDC9FFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFDBE0DE1A26
+        27D5CDCBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFC7CAC74756552A3D3FBFC3C1FFFFFFFFFFFFF2EFEF6A79781721230E1315
+        0E1315151C1E1E2C2E293B3C2C4041202F30131B1D0E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E1315222F2EDDE2E2283636ACA8A6FDFDFCFFFFFF00FFFF
+        FFFFFFFFFFFEFEC5CAC6162123F3F1EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFDFC8F9A9D2C3D3D617170FFFFFFFFFFFF
+        CAC3C24958580E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E1315BEC6C33F4D4C
+        878382FCFBFBFFFFFF00FFFFFFFFFFFFFDFDFCB0AEAE23302EFDFCFAFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDEE1E0
+        5C6A6A354645C0C5C3FFFFFFF0EEED5B6D6E0E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E1315A1A1A14C5E5D5E6766F9FAFAFFFFFF00FFFFFFFFFFFFFDFCFBA9
+        A5A3364240FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFB5B8B54A5453445353CDD5D394A0A22C40410E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13158D8C8B546667516463F8F9F9FFFF
+        FF00FFFFFFFFFFFFFCFBFB9A95923F4C4BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBBBFBD535F
+        5E3442422A383812191A0E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E1315162023C3C9
+        C7586C6C4D6061F8F9F9FFFFFF00FFFFFFFFFFFFFBFAFB97928F465654FFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFEEECEC8F919033424213191B0E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E1315506062EDEFF0656D6D4C5F60F8F9F8FFFFFF00FFFFFFFFFFFF
+        FBFAFB97928F465654FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA3AEAF3346470E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13151F2C2BC0C3C0FEFEFE686D6C4C5F60F8
+        F9F8FFFFFF00FFFFFFFFFFFFFBFAFB96918F414F4EFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFEFE9AA7A72C40410E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13156D7676F1
+        F2F2FFFFFF5B6C6D4C5E60F8F9F8FFFFFF00FFFFFFFFFFFFFCFBFBA29D9B3C48
+        47FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFF9F7F69A9C9C4B535234403F171F220E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E1315334243D6DCDCFFFFFFFFFFFF5669694F6363F8F9F9FFFFFF00FFFF
+        FFFFFFFFFDFCFCB0ADAC2C3836FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD9D4D35663630E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13151A2526626F6FCDC8C5FDFCFCFFFFFFFFFFFF506263
+        586767F8FAFAFFFFFF00FFFFFFFFFFFFFDFDFCB4B5B6172225FBF8F6FFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        F6F4F2707E7E131A1C0E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E1315273738969EA0F8F9F8FFFFFF
+        FFFFFFFFFFFFFFFFFF4453517E7A77FCFBFBFFFFFF00FFFFFFFFFFFFFFFFFFD3
+        DAD9162023E3DDDAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF909A9D2332320E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        2A3837BEC9C9FFFFFFFFFFFFFFFFFFFFFFFFFFFEFE313D3AA49F9CFDFDFCFFFF
+        FF00FFFFFFFFFFFFFFFFFFE3E7E8263130B5AFAEFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFACB8B9394B
+        4C0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13153E4E4ED1D8D9FFFFFFFFFFFFFFFFFFFFFFFFF6F4
+        F1192324BDBCBBFEFEFEFFFFFF00FFFFFFFFFFFFFFFFFFEBEEEF41504F737877
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFF0EDEC697675131A1C0E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E1315778181F2F1F0FFFF
+        FFFFFFFFFFFFFFFFFFFFC7C0C0192325E1E4E2FFFFFFFFFFFF00FFFFFFFFFFFF
+        FFFFFFEFF1F24F5F5F536465FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF939E9F2636370E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        15223131ADB8B7FFFEFEFFFFFFFFFFFFFFFFFFFFFFFF878D8B374443EFF2F2FF
+        FFFFFFFFFF00FFFFFFFFFFFFFFFFFFFAF9F98C8C8A2C3C3DFEFDFCFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFC2C2C14656550E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13155C6665E2E2E0FFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFF5264654B5E60F3F5F5FFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFEFEFEBFC4
+        C01C292AD0C7C5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFAFB4B23C4B4B0E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E131597A4A3FDFDFCFF
+        FFFFFFFFFFFFFFFFFFFFFFFEFDFC2B3B3C868A88FAFAFAFFFFFFFFFFFF00FFFF
+        FFFFFFFFFFFFFFFFFFFFE3E7E7394645747A78FFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF99A4A62A3D3D
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E131598A6A5FEFDFCFFFFFFFFFFFFFFFFFFFFFFFFC5BDBE1B2627D1D6D3
+        FFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFEFF1F15D6A6B455352FF
+        FEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE5E9EA879496
+        606E6E6776765263641D2B2D0E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E1315919D9FFBFAFAFFFFFFFFFFFFFFFFFF
+        FFFFFF6274733C4B4AEBEDEDFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFF
+        FFFFFCFBFBA6A8A91F2B2DD5CDCBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFAFB9B93847480E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E1315879291
+        F7F5F4FFFFFFFFFFFFFFFFFFFDFCFB324342717472F6F5F5FFFFFFFFFFFFFFFF
+        FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFE4E43B4B4B627372FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAFAF9C5C7C45D6C6C1924260E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E1315889595F7F5F4FFFFFFFFFFFFFFFFFF9E9F9E202E30C9D0
+        CEFFFEFEFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3F3F3
+        7A7D7D293737F6F4F1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFF3F6F696A0A23649480E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E1315919E9FFCFBFAFFFFFFFFFF
+        FFFFFFFF4957564D5857EBEDEDFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFEFEC5CDCD29373788908EFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFE9EA6A83042420E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13152433
+        33ACB9BAFFFFFFFFFFFFFFFFFFCBC2C11E2B2C9B9D9CFBFAF9FFFFFFFFFFFFFF
+        FFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEEEDED6F73713040
+        41F0EDEAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFF5F3F2707E7F1620220E13150E13150E13150E13150E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E1315506263D9DFDFFFFFFFFFFFFFFFFEFE515F5E445251E2
+        E6E5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFEFEBFC8C62E3C3A737878FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB7BBB93F4E4E0E13150E13150E1315
+        0E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E1315314040B0B9B9FEFEFEFFFFFFFF
+        FFFFABA7A6222F2E9CA1A1FAFAFBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1F0EF767D7C233334D3CCCBFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBFAFA
+        7C87881D2A2C0E13150E13150E13150E13150E13150E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E131524303095
+        9B9CF9F8F8FFFFFFFFFFFFF8F6F63C4D4D556161E6E9E9FFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFD2D6D6424E4D4A5959FDFCFBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFE7E6E66170701721230E13150E13150E13150E13
+        150E13150E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E1315172021849192F8F7F6FFFFFFFFFFFFFFFFFF797E7E263739B3C1C1
+        FEFEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFBFB9EA7A8293A3A7C8181FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE3E3E25F6F
+        6F1722250E13150E13150E13150E13150E13150E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13153C4B4BBAC3C3FFFFFFFFFFFFFFFFFF
+        A2A3A3222F30818988F4F3F2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0EFEF
+        7B82802635359BA4A5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFEBECEB6F78781E2A2C0E13150E13150E13150E13150E
+        13150E13150E13150E13150E13150E13150E13150E13150E13150E1315505756
+        CAC2C0FFFEFEFFFFFFE3DEDB364545586767E2E6E6FFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFDDE3E25766662E3D3DC6C0BEFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8F7F6A5A5A559
+        656528393A151E200E13150E13150E13150E13150E13150E13150E13150E1315
+        19202135403E4E5857999A99F1EFEEFFFFFFEEEBEB425556475553CDD0CDFFFE
+        FEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3DAD95160
+        60364546C9C2C0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFEFEFEEFF0F0BFC1BE8D8C8B5357562A3332171F20
+        161F20131C1E0E1315172224394747767977D6D2D0FFFFFFFFFFFFF2F0EF475B
+        5D343F3CB0B5B2FEFEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFCCD3D34E5C5B354445B8B4B4FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFE9E5E48E87844E4943494E497B7E7EA2A1A2C4C4C3F3F3F3FFFFFFFFFF
+        FFFFFFFFEFECEA475A5C303D3DA5AAA9FDFDFCFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCDD6D64E5F5F29
+        373899A2A4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF9F8F8EBE8E6F3F1F0FEFEFEFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFC6C0BF4051513B4645AAAFACFDFCFCFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFD4DCDC5768692635356C7979F2F0EFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFCFB8F9797253435465757C3
+        C8C6FEFEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1F0F0828B8A283636
+        3A49499EA7A8FFFEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC5BFBF47
+        595A223033656F6EDDDBD9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFDFCFCBDC7C64F6060212F314051529AA1A3F9F8F7FFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FEFEB2AFB05C67671D2C2E3D4C4BA5A9AAF9FAF9FFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF9F8F8A1A7A84555
+        541F2E302E3F40677273ABA7A6ECE8E6FFFEFEFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FEFEF6F4F1C0B9BA717D7C384746202E2D3346458B9798EFEEEDFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFCFCFCCBC7C5727A7A3747471D2A2A1721232C3B3C44
+        54524B5E5F4B5E5F46575633403F1B25261922233041415C6B6BABB3B1F8F7F6
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE
+        FEFEF3F2F0D0C8C4ABA5A48F8988827D7B7E7977888483A6A09EC1BCBEE9E6E4
+        FCFCFCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00}
+      Transparent = True
+    end
+    object Label7: TLabel
+      Left = 38
+      Top = 143
+      Width = 40
+      Height = 13
+      Caption = 'Detetive'
+      Color = clWhite
+      ParentColor = False
+    end
+    object rbSim: TRadioButton
+      Left = 150
+      Top = 114
+      Width = 140
+      Height = 17
+      Caption = 'Sim  ( Verificar agora )'
+      TabOrder = 0
+    end
+    object rbNao: TRadioButton
+      Left = 149
+      Top = 136
+      Width = 158
+      Height = 17
+      Caption = 'N'#227'o  ( Verificar mais tarte )'
+      Checked = True
+      TabOrder = 1
+      TabStop = True
+    end
+  end
+  object Panel7: TPanel
+    Left = 0
+    Top = 45
+    Width = 426
+    Height = 28
+    Align = alTop
+    BevelOuter = bvNone
+    Color = clWhite
+    TabOrder = 6
+    object Label13: TLabel
+      Left = 16
+      Top = 7
+      Width = 189
+      Height = 13
+      Caption = 'Humanari, Sub.Conj. A, Apto. 13 '
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+  object Panel8: TPanel
+    Left = 0
+    Top = 40
+    Width = 426
+    Height = 5
+    Align = alTop
+    Alignment = taLeftJustify
+    Color = 7163404
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+  end
+  object PnlTitulo: TPanel
+    Left = 0
+    Top = 0
+    Width = 426
+    Height = 40
+    Align = alTop
+    Alignment = taLeftJustify
+    BevelOuter = bvNone
+    Color = clWhite
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    object Titulo: TLabel
+      Left = 20
+      Top = 15
+      Width = 107
+      Height = 14
+      Caption = 'Capta'#231#227'o de im'#243'vel'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Image10: TImage
+      Left = 293
+      Top = 5
+      Width = 23
+      Height = 22
+      Picture.Data = {
+        07544269746D617036080000424D360800000000000036040000280000002000
+        0000200000000100080000000000000400000000000000000000000100000000
+        000000000000000080000080000000808000800000008000800080800000C0C0
+        C000C0DCC000F0CAA60004040400080808000C0C0C0011111100161616001C1C
+        1C002222220029292900555555004D4D4D004242420039393900807CFF005050
+        FF009300D600FFECCC00C6D6EF00D6E7E70090A9AD0000003300000066000000
+        99000000CC00003300000033330000336600003399000033CC000033FF000066
+        00000066330000666600006699000066CC000066FF0000990000009933000099
+        6600009999000099CC000099FF0000CC000000CC330000CC660000CC990000CC
+        CC0000CCFF0000FF660000FF990000FFCC003300000033003300330066003300
+        99003300CC003300FF00333300003333330033336600333399003333CC003333
+        FF00336600003366330033666600336699003366CC003366FF00339900003399
+        330033996600339999003399CC003399FF0033CC000033CC330033CC660033CC
+        990033CCCC0033CCFF0033FF330033FF660033FF990033FFCC0033FFFF006600
+        00006600330066006600660099006600CC006600FF0066330000663333006633
+        6600663399006633CC006633FF00666600006666330066666600666699006666
+        CC00669900006699330066996600669999006699CC006699FF0066CC000066CC
+        330066CC990066CCCC0066CCFF0066FF000066FF330066FF990066FFCC00CC00
+        FF00FF00CC009999000099339900990099009900CC0099000000993333009900
+        66009933CC009900FF00996600009966330099336600996699009966CC009933
+        FF009999330099996600999999009999CC009999FF0099CC000099CC330066CC
+        660099CC990099CCCC0099CCFF0099FF000099FF330099CC660099FF990099FF
+        CC0099FFFF00CC00000099003300CC006600CC009900CC00CC0099330000CC33
+        3300CC336600CC339900CC33CC00CC33FF00CC660000CC66330099666600CC66
+        9900CC66CC009966FF00CC990000CC993300CC996600CC999900CC99CC00CC99
+        FF00CCCC0000CCCC3300CCCC6600CCCC9900CCCCCC00CCCCFF00CCFF0000CCFF
+        330099FF6600CCFF9900CCFFCC00CCFFFF00CC003300FF006600FF009900CC33
+        0000FF333300FF336600FF339900FF33CC00FF33FF00FF660000FF663300CC66
+        6600FF669900FF66CC00CC66FF00FF990000FF993300FF996600FF999900FF99
+        CC00FF99FF00FFCC0000FFCC3300FFCC6600FFCC9900FFCCCC00FFCCFF00FFFF
+        3300CCFF6600FFFF9900FFFFCC006666FF0066FF660066FFFF00FF666600FF66
+        FF00FFFF66002100A5005F5F5F00777777008686860096969600CBCBCB00B2B2
+        B200D7D7D700DDDDDD00E3E3E300EAEAEA00F1F1F100F8F8F800F0FBFF00A4A0
+        A000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+        FF00070707070707070707070707070707070707070707070707070707070707
+        0707070707070707070707070707070707070707070707070707070707070707
+        0707070707070707070707070707070707070707070707070707070707070707
+        0707070707070707070707070707070707070707070707070707070707070707
+        0707070707070707070707070707EDF8F8F8F8F8F8F8F8070707070707070707
+        070707070707070707070707F7EDEFBCF1F1F007ED6DEBF8F807070707070707
+        0707070707070707070707F7F0FFFFF6F6F6F6FFFFF4EF6DF8F8070707070707
+        07070707070707070707EFFFFFF4F1EFB5B509F0F3F5FFF2EBEBF80707070707
+        070707070707070707F0FFF6F2B5ADADADCFADADB407F4FFF5EBEBF807070707
+        070707070707070707FFF5BCCFADADADEEF5B5ADADADB4F3FFF46DEBF8070707
+        0707070707070707FFF6BCADADADADCFF1FF09ADADADADB4F4FFBCEAEB070707
+        07070707070707F2FFF3CFADADADADADB509CFADADADADADB5F5FFF8EBF80707
+        070707070707EEF5FFB5ADADADADADADADADADADADADADADADF1FFEEEBEB0707
+        07070707070719FFF4CFADADADADADAD07F3B4ADADADADADADB5FFF4EBEB0707
+        070707070707F3FFDDADADADADADADADBCFF09ADADADADADADB4F5FFF8EB0707
+        070707070707F3FF09ADADADADADADADB5F6F4B4ADADADADADCFF4FFECEB0707
+        070707070707F3FF09ADADADADADADADAD07FFF4B4ADADADADCFF4FFECEB0707
+        070707070707F3FF09ADADADADADADADADADEEFFF3ADADADADB4F5FFEDEB0707
+        070707070707F3FF19CFADADADADADADADADCFF3FFB5ADADADB4FFFFEDEB0707
+        070707070707F3FFFFD5D4ADAD09DDB4ADADADF1FF09ADADAD09FFF4EDEB0707
+        070707070707EEF5FFDDD5D5CFBCFFF3B4ADB5F5FFB5ADADB4F5FF07ED070707
+        07070707070707F3FFFFDCD5D5B5F3FFF5F3FFFFF3B4D4D5DDFFFFF7ED070707
+        07070707070707EEF4FFFFDCDCD509F1F3F3F3F2D6D5D509FFFFBCEF07070707
+        0707070707070707EEFFFFFF19DCDCDC090909DCD5DC19FFFFF3EF0707070707
+        070707070707070707EEF5FFFFFFE2E21919DC1919FFFFFFF4EF070707070707
+        07070707070707070707EEF4FFFFFFFFFFFFFFFFFFFFFFF20707070707070707
+        0707070707070707070707EEF3F4FFFFFFFFFFFFF5F4EE070707070707070707
+        07070707070707070707070707EEF3F3F3F4F3F3EE0707070707070707070707
+        0707070707070707070707070707070707070707070707070707070707070707
+        0707070707070707070707070707070707070707070707070707070707070707
+        0707070707070707070707070707070707070707070707070707070707070707
+        0707070707070707070707070707070707070707070707070707070707070707
+        0707}
+      Stretch = True
+      Transparent = True
+    end
+  end
+  object ppmproprietario: TPopupMenu
+    Left = 325
+    Top = 83
+    object Adicionar1: TMenuItem
+      Caption = 'Adicionar'
+      OnClick = Adicionar1Click
+    end
+    object Remover1: TMenuItem
+      Caption = 'Remover'
+    end
+    object N1: TMenuItem
+      Caption = '-'
+    end
+    object IrparaDetalhes1: TMenuItem
+      Caption = 'Ir para Detalhes'
+    end
+  end
+end
