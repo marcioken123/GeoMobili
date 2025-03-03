@@ -135,7 +135,6 @@ ProductName=
 ProductVersion=1.0.0.0
 Comments=
 [Excluded Packages]
-c:\program files (x86)\borland\delphi7\Bin\dcldss70.bpl=Borland Decision Cube Components
 C:\Projetos\Componentes\Steema Software\TeeChart Standard 2011 for Delphi 7\Delphi7\Bin\DclTee97.bpl=TeeChart 2011 Components
 C:\Projetos\Componentes\Steema Software\TeeChart Standard 2011 for Delphi 7\Delphi7\Bin\DclTQR97.bpl=TeeChart 2011 for QuickReport 3
 [HistoryLists\hlUnitAliases]
