@@ -8,6 +8,7 @@ uses
   Windows,
   Messages,
   Controls,
+  DateUtils,
   UPrincipal in 'source\UPrincipal.pas' {FrmPrincipal},
   UListDado_Mapa in 'source\UListDado_Mapa.pas' {FrmListDado_Mapa},
   UGrupo_Unidade in 'source\UGrupo_Unidade.pas' {FrmGrupo_Unidade},
@@ -74,11 +75,22 @@ begin
   Application.CreateForm(TDtmUsuario, DtmUsuario);
   Application.CreateForm(TDtmImobiliaria, DtmImobiliaria);
   Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+
   Application.CreateForm(TFrmSplash, FrmSplash);
+
   FrmSplash.Show;
-  FrmSplash.Refresh;
-  Sleep(1500);
+  FrmSplash.Update;
+  FrmSplash.FTimeOut := Now;
+
+  while SecondsBetween(FrmSplash.FTimeOut, Now) < 3 do
+  begin
+
+  end;
+  //FrmSplash.Refresh;
+  //Sleep(1500);
+
   FrmSplash.Free;
+  
   FrmSenha := TFrmSenha.Create(Application);
   //FrmSenha.btnOK.caption := 'Alterar';
   if FrmSenha.ShowModal <> mrOk then Exit;
